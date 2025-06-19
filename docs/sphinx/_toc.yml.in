@@ -1,0 +1,25 @@
+# Anywhere {branch} is used, the branch name will be substituted.
+# These comments will also be removed.
+defaults:
+  numbered: False
+root: index
+subtrees:
+- entries:
+- file: about/release-notes
+  title: Release notes
+- caption: Components
+  entries:
+  - url: installation/installation
+    title: Installation
+- caption: Reference
+  entries:
+  - file: reference/hipcim/modules
+  - file: reference/supported-functionality
+- caption: ROCm-LS
+  entries:
+  - file: rocm-ls/rocm-ls-index
+  - file: rocm-ls/release-notes
+  - file: rocm-ls/contribution
+- caption: About
+  entries:
+  - file: license
