@@ -25,11 +25,6 @@ The documentation is structured as follows:
 
   .. grid-item-card:: Components
 
-    * :ref:`hipCIM <index>`
-
-  .. grid-item-card:: Related content
-
-    * :ref:`Contributing to ROCm-LS <rocm-ls-contribution>`
 
 To contribute to the documentation, refer to
 :ref:`Contributing to ROCm-LS <rocm-ls-contribution>`.
