@@ -25,7 +25,6 @@ The documentation is structured as follows:
 
   .. grid-item-card:: Components
 
-
 To contribute to the documentation, refer to
 :ref:`Contributing to ROCm-LS <rocm-ls-contribution>`.
 
