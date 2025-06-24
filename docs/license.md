@@ -1,4 +1,4 @@
-# License
+# ROCm-LS license
 
 ```{include} ../LICENSE
 ```
