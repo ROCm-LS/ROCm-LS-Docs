@@ -21,7 +21,7 @@ all_article_info_author = ""
 # Required settings
 html_theme = "rocm_docs_theme"
 html_theme_options = {
-    "flavor": "rocm-docs-home",
+    "flavor": "rocm-ls",
     # Add any additional theme options here
 }
 extensions = ["rocm_docs"]
