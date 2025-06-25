@@ -35,7 +35,7 @@ The following table lists the ROCm-LS components available in the current releas
       - 1.0.00
 
 hipCIM
-=======
+-------
 
 hipCIM enables accelerated computer vision and image processing for multidimensional images used in biomedical, geospatial, material and life science, and remote sensing use cases. hipCIM offers both a Python and C++ API, allowing for a wide range of use cases. Despite being named hipCIM, this library is API compatible with the NVIDIA cuCIM library, allowing for workloads to be transitioned to AMD devices without the need for hipification.
 
@@ -52,7 +52,7 @@ hipCIM API mirrors `scikit-image <https://scikit-image.org/>`_ for image manipul
 hipCIM is fully open source under the Apache-2.0 license and available for contribution.
 
 Compatibility matrix
-----------------------
+=====================
 
 .. list-table::
 
