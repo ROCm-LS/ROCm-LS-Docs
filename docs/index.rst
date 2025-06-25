@@ -16,8 +16,6 @@ You can leverage ROCm-LS to accelerate both new and existing life science worklo
 
 The ROCm-LS libraries provide tools to build a complete workflow for life science acceleration on AMD GPUs.
 
-The code is open and hosted at `<https://github.com/ROCm-LS/ROCm-LS-Docs>`_.
-
 The documentation is structured as follows:
 
 .. grid:: 2
