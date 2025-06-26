@@ -5,8 +5,14 @@ defaults:
 root: index
 subtrees:
 - entries:
-  - file: about/release-notes
+  - file: about/release-notes.md
     title: Release notes
+
+- caption: Components
+  entries:
+  - url: https://rocm.docs.amd.com/projects/hipCIM/en/release/1.0.0/
+    title: hipCIM
+
 - caption: About
   entries:
   - file: license

@@ -3,6 +3,8 @@ import os
 import shutil
 import re
 
+shutil.copy2("../RELEASE.md", "./about/release-notes.md")
+
 html_baseurl = os.environ.get("READTHEDOCS_CANONICAL_URL", "rocm.docs.amd.com")
 html_context = {}
 if os.environ.get("READTHEDOCS", "") == "True":

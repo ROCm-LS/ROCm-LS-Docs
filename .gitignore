@@ -3,3 +3,6 @@
 
 ## VSCode IDE
 .vscode
+
+# This is auto-generated using conf.py
+docs/about/release-notes.md
