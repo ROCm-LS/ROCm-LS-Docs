@@ -31,7 +31,7 @@ The following table lists the ROCm-LS components available in the current releas
         </colgroup>
         <tbody class="rocm-components-libs rocm-components-ml">
             <tr>
-                <td><a href="https://rocm.docs.amd.com/projects/hipCIM/en/latest/">hipCIM</a></td>
+                <td><a href="https://rocm.docs.amd.com/projects/hipCIM/en/release/1.0.0/">hipCIM</a></td>
                 <td>1.0.00</td>
                 <td><a href="https://github.com/ROCm-LS/hipCIM"><i class="fab fa-github fa-lg"></i></a></td>
             </tr>
