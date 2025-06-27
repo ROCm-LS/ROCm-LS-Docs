@@ -8,7 +8,7 @@ subtrees:
 
 - caption: Components
   entries:
-  - url: https://rocm.docs.amd.com/projects/hipCIM/en/latest/
+  - url: https://rocm.docs.amd.com/projects/hipCIM/en/release/1.0.0/
     title: hipCIM
 
 - caption: About
