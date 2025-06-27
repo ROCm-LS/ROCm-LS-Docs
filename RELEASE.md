@@ -31,7 +31,7 @@ The following table lists the ROCm-LS components available in the current releas
         </colgroup>
         <tbody class="rocm-components-libs rocm-components-ml">
             <tr>
-                <td><a href="https://rocm.docs.amd.com/projects/hipCIM/en/release/1.0.0/">hipCIM</a></td>
+                <td><a href="https://rocm.docs.amd.com/projects/hipCIM/en/release-1.0.x/">hipCIM</a></td>
                 <td>1.0.00</td>
                 <td><a href="https://github.com/ROCm-LS/hipCIM"><i class="fab fa-github fa-lg"></i></a></td>
             </tr>
@@ -61,4 +61,4 @@ hipCIM is fully open source under the Apache-2.0 license and available for contr
 |------------------|--------------|----------------|----------|----------------|
 | Ubuntu 22.04 | 6.4 | 3.10.12 | MI300 / gfx942 | hipCIM 1.0.00 |
 
-For hipCIM supported features and limitations, see [Supported hipCIM functionality](https://rocm.docs.amd.com/projects/hipCIM/en/release/1.0.0/reference/supported-functionality.html#)
+For hipCIM supported features and limitations, see [Supported hipCIM functionality](https://rocm.docs.amd.com/projects/hipCIM/en/release-1.0.x/reference/supported-functionality.html)

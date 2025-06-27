@@ -23,10 +23,10 @@ The documentation is structured as follows:
 
   .. grid-item-card:: Components
 
-    * `hipCIM <https://rocm.docs.amd.com/projects/hipCIM/en/release/1.0.0/>`_
+    * `hipCIM <https://rocm.docs.amd.com/projects/hipCIM/en/release-1.0.x/>`_
 
 To contribute to the documentation, refer to
 :ref:`Contributing to ROCm-LS <rocm-ls-contribution>`.
 
 You can find licensing information on the
-:doc:`Licensing <license>` page.
+:doc:`Licensing <about/license>` page.
