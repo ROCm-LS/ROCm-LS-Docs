@@ -13,6 +13,10 @@ subtrees:
   - url: https://rocm.docs.amd.com/projects/hipCIM/en/release-1.0.x/
     title: hipCIM
 
+- caption: Related content
+  entries:
+  - file: contribute/contribution
+
 - caption: About
   entries:
   - file: about/license
