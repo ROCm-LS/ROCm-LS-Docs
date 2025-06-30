@@ -28,9 +28,3 @@ The documentation is structured as follows:
   .. grid-item-card:: Related content
 
     * :ref:`rocm-ls-contribution`
-
-To contribute to the documentation, refer to
-:ref:`Contributing to ROCm-LS <rocm-ls-contribution>`.
-
-You can find licensing information on the
-:doc:`Licensing <about/license>` page.

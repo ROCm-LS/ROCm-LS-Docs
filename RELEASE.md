@@ -4,7 +4,7 @@ We are excited to announce the early access release of ROCm-LS, a new software t
 
 ## ROCm-LS release highlights
 
-ROCm-LS is a GPU-accelerated life science library. The early access release features a single library, hipCIM.
+ROCm-LS is a collection of GPU-accelerated life science libraries. The early access release features a single library, hipCIM.
 
 hipCIM is an open-source, accelerated computer vision and image processing software library for multidimensional images used in biomedical, geospatial, material and life science, and remote sensing use cases.
 
@@ -14,7 +14,7 @@ ROCm-LS is in an early access state. Running production workloads is not recomme
 
 ## ROCm-LS components
 
-The following table lists the ROCm-LS components available in the current release. To access the component’s source code on GitHub, click the component name.
+The following table lists the ROCm-LS components available in the current release. Click the GitHub icon to go to the component's source code.
 
 <div class="pst-scrollable-table-container">
     <table id="rocm-rn-components" class="table">
