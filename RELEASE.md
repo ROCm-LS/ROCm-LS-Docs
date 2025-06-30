@@ -4,12 +4,12 @@ We are excited to announce the early access release of ROCm-LS, a new software t
 
 ## ROCm-LS release highlights
 
-ROCm-LS is a GPU-accelerated life science library, similar to the NVIDIA CLARA software collection. The early access release features a single library, hipCIM.
+ROCm-LS is a GPU-accelerated life science library. The early access release features a single library, hipCIM.
 
 hipCIM is an open-source, accelerated computer vision and image processing software library for multidimensional images used in biomedical, geospatial, material and life science, and remote sensing use cases.
 
 :::{note}
-The 25.06 release is a technology preview and is NOT intended for production workloads.
+ROCm-LS is in an early access state. Running production workloads is not recommended.
 :::
 
 ## ROCm-LS components
@@ -59,6 +59,6 @@ hipCIM is fully open source under the Apache-2.0 license and available for contr
 
 | Operating system | ROCm version | Python version | Hardware | Support status |
 |------------------|--------------|----------------|----------|----------------|
-| Ubuntu 22.04 | 6.4 | 3.10.12 | MI300 / gfx942 | hipCIM 1.0.00 |
+| Ubuntu 22.04 | 6.4.0 | 3.10.12 | Instinct MI300 series (gfx942) | hipCIM 1.0.00 |
 
 For hipCIM supported features and limitations, see [Supported hipCIM functionality](https://rocm.docs.amd.com/projects/hipCIM/en/release-1.0.x/reference/supported-functionality.html)
