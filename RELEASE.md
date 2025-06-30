@@ -14,7 +14,7 @@ ROCm-LS is in an early access state. Running production workloads is not recomme
 
 ## ROCm-LS components
 
-The following table lists the ROCm-LS components available in the current release. To access the component’s source code on GitHub, click the component name.
+The following table lists the ROCm-LS components available in the current release. Click the GitHub icon to go to the component's source code.
 
 <div class="pst-scrollable-table-container">
     <table id="rocm-rn-components" class="table">
