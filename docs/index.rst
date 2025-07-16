@@ -23,7 +23,7 @@ The documentation is structured as follows:
 
   .. grid-item-card:: Components
 
-    * `hipCIM <https://rocm.docs.amd.com/projects/hipCIM/en/release-1.0.x/>`_
+    * `hipCIM <https://rocm.docs.amd.com/projects/hipCIM/en/latest/>`_
 
   .. grid-item-card:: Related content
 
