@@ -28,3 +28,4 @@ The documentation is structured as follows:
   .. grid-item-card:: Related content
 
     * :ref:`rocm-ls-contribution`
+    * `ROCm-LS blogs <https://advanced-micro-devices-rocm-blogs--1093.com.readthedocs.build/projects/internal/en/1093/software-tools-optimization/rocm-ls-intro/README.html>`_
