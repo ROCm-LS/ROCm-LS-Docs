@@ -72,7 +72,7 @@ hipCIM is fully open source under the Apache-2.0 license and available for contr
 
 ### MONAI for AMD ROCm
 
-MONAI (Medical Open Network for AI) is a PyTorch-based, open-source framework designed for healthcare imaging deep learning. AMD now provides ROCm-enabled MONAI builds optimized for AMD GPUs as a ROCm-LS component, which enables scalable medical AI workflows on AMD hardware.
+MONAI (Medical Open Network for AI) is a PyTorch-based, open-source framework designed for deep learning in healthcare imaging. AMD now provides ROCm-enabled MONAI builds optimized for AMD GPUs as a ROCm-LS component, which enables scalable medical AI workflows on AMD hardware.
 
 **Key features:**
 
