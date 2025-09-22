@@ -3,15 +3,17 @@ import os
 import shutil
 import re
 
+shutil.copy2("../RELEASE.md", "./about/release-notes.md")
+
 html_baseurl = os.environ.get("READTHEDOCS_CANONICAL_URL", "rocm.docs.amd.com")
 html_context = {}
 if os.environ.get("READTHEDOCS", "") == "True":
     html_context["READTHEDOCS"] = True
 project = "ROCm for Life Science"
 
-version = "25.06"
+version = "25.09"
 release = version
-html_title = "ROCm-LS 25.06 documentation"
+html_title = "ROCm-LS 25.09 documentation"
 author = "Advanced Micro Devices, Inc."
 copyright = "Copyright (c) 2025 Advanced Micro Devices, Inc. All rights reserved."
 setting_all_article_info = True
@@ -21,9 +23,13 @@ all_article_info_author = ""
 # Required settings
 html_theme = "rocm_docs_theme"
 html_theme_options = {
-    "flavor": "rocm-docs-home",
+    "flavor": "rocm-ls",
     # Add any additional theme options here
 }
+
+html_static_path = ["sphinx/static/css"]
+html_css_files = ["rocm_custom.css"]
+
 extensions = ["rocm_docs"]
 
 # Table of contents
