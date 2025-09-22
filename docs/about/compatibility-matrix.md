@@ -1,6 +1,6 @@
 ## Compatibility matrix
 
-Use this matrix to view the ROCm-LS 25.09 compatibility and system requirements:
+Use this matrix to view the ROCm-LS compatibility and system requirements across the releases:
 
 | ROCm-LS version | Operating system | ROCm version | Python version | Hardware | Supported components  |
 |--------------|------------------|--------------|----------------|----------|----------------|
