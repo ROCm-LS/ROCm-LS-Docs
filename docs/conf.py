@@ -27,6 +27,15 @@ html_theme_options = {
     # Add any additional theme options here
 }
 
+'''
+docs_header_version is used to manually configure the version in the header. If
+there exists a non-null value mapped to docs_header_version, then the header in
+the documentation page will contain the given version string.
+'''
+html_context = {
+    "docs_header_version": "25.09"
+}
+
 html_static_path = ["sphinx/static/css"]
 html_css_files = ["rocm_custom.css"]
 
