@@ -2,13 +2,13 @@
 
 The release notes provide a summary of notable changes since the previous ROCm-LS release.
 
-This early access release serves as a preview of the capabilities enabled by the future ROCm-LS releases and is not intended for production workloads.
+This early access release serves as a preview and is not intended for production workloads.
 
 ## ROCm-LS release highlights
 
 The following are notable new features and improvements in ROCm-LS 25.09 since the release of 25.06.
 
-**Introducing MONAI for AMD ROCm**
+### Introducing MONAI for AMD ROCm
 
 MONAI (Medical Open Network for AI) is a PyTorch-based, open-source framework designed for deep learning in healthcare imaging. AMD now provides ROCm-enabled MONAI builds optimized for AMD GPUs as a ROCm-LS component, which enables scalable medical AI workflows on AMD hardware.
 
@@ -56,3 +56,7 @@ The following table lists the versions of ROCm-LS components for ROCm-LS 25.09, 
         </tbody>
     </table>
 </div>
+
+:::{note}
+The hipCIM version remains unchanged in this release.
+:::

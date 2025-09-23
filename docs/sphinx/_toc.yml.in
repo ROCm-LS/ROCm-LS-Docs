@@ -16,6 +16,10 @@ subtrees:
   - url: https://rocm.docs.amd.com/projects/monai/en/latest/
     title: MONAI for AMD ROCm
 
+- caption: Related content
+  entries:
+  - file: contribute/contribution
+
 - caption: About
   entries:
   - file: about/license
