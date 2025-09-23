@@ -30,8 +30,9 @@ The documentation is structured as follows:
   .. grid-item-card:: Components
 
     * `hipCIM <https://rocm.docs.amd.com/projects/hipCIM/en/latest/>`_
-    * `MONAI for AMD ROCm <https://rocm.docs.amd.com/projects/monai/en/latest/>`_
+    * `MONAI for AMD ROCm <https://rocm.docs.amd.com/projects/monai-internal/en/swraw-doc-creation/index.html>`_
 
   .. grid-item-card:: Related content
 
     * `ROCm-LS blogs <https://rocm.blogs.amd.com/software-tools-optimization/rocm-ls-intro/README.html>`_
+    * :ref:`rocm-ls-contribution`

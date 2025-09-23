@@ -13,8 +13,12 @@ subtrees:
   entries:
   - url: https://rocm.docs.amd.com/projects/hipCIM/en/latest/
     title: hipCIM
-  - url: https://rocm.docs.amd.com/projects/monai/en/latest/
+  - url: https://rocm.docs.amd.com/projects/monai-internal/en/swraw-doc-creation/index.html
     title: MONAI for AMD ROCm
+
+- caption: Related content
+  entries:
+  - file: contribute/contribution
 
 - caption: About
   entries:

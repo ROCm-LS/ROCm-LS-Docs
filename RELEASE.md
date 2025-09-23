@@ -2,13 +2,13 @@
 
 The release notes provide a summary of notable changes since the previous ROCm-LS release.
 
-This early access release serves as a preview of the capabilities enabled by the future ROCm-LS releases and is not intended for production workloads.
+This early access release serves as a preview and is not intended for production workloads.
 
 ## ROCm-LS release highlights
 
 The following are notable new features and improvements in ROCm-LS 25.09 since the release of 25.06.
 
-**Introducing MONAI for AMD ROCm**
+### Introducing MONAI for AMD ROCm
 
 MONAI (Medical Open Network for AI) is a PyTorch-based, open-source framework designed for deep learning in healthcare imaging. AMD now provides ROCm-enabled MONAI builds optimized for AMD GPUs as a ROCm-LS component, which enables scalable medical AI workflows on AMD hardware.
 
@@ -20,7 +20,7 @@ MONAI for AMD ROCm offers the following advantages:
 
 - Validation with hipCIM image processing workflows
 
-For more information, see [MONAI for AMD ROCm documentation](https://rocm.docs.amd.com/projects/monai/en/latest/)
+For more information, see [MONAI for AMD ROCm documentation](https://rocm.docs.amd.com/projects/monai-internal/en/swraw-doc-creation/index.html)
 
 ## ROCm-LS components
 
@@ -49,10 +49,14 @@ The following table lists the versions of ROCm-LS components for ROCm-LS 25.09, 
             </tr>
             <tr>
                 <td>AI/ML</td>
-                <td><a href="https://rocm.docs.amd.com/projects/monai/en/latest/">MONAI for AMD ROCm</a></td>
+                <td><a href="https://rocm.docs.amd.com/projects/monai-internal/en/swraw-doc-creation/index.html">MONAI for AMD ROCm</a></td>
                 <td>1.0.0</td>
-                <td><a href="https://github.com/ROCm-LS/monai"><i class="fab fa-github fa-lg"></i></a></td>
+                <td><a href="https://github.com/AMD-AIOSS/monai"><i class="fab fa-github fa-lg"></i></a></td>
             </tr>
         </tbody>
     </table>
 </div>
+
+:::{note}
+The hipCIM version remains unchanged in this release.
+:::
