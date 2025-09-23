@@ -20,7 +20,7 @@ MONAI for AMD ROCm offers the following advantages:
 
 - Validation with hipCIM image processing workflows
 
-For more information, see [MONAI for AMD ROCm documentation](https://rocm.docs.amd.com/projects/monai/en/latest/)
+For more information, see [MONAI for AMD ROCm documentation](https://rocm.docs.amd.com/projects/monai-internal/en/swraw-doc-creation/index.html)
 
 ## ROCm-LS components
 
@@ -49,9 +49,9 @@ The following table lists the versions of ROCm-LS components for ROCm-LS 25.09, 
             </tr>
             <tr>
                 <td>AI/ML</td>
-                <td><a href="https://rocm.docs.amd.com/projects/monai/en/latest/">MONAI for AMD ROCm</a></td>
+                <td><a href="https://rocm.docs.amd.com/projects/monai-internal/en/swraw-doc-creation/index.html">MONAI for AMD ROCm</a></td>
                 <td>1.0.0</td>
-                <td><a href="https://github.com/ROCm-LS/monai"><i class="fab fa-github fa-lg"></i></a></td>
+                <td><a href="https://github.com/AMD-AIOSS/monai"><i class="fab fa-github fa-lg"></i></a></td>
             </tr>
         </tbody>
     </table>
