@@ -60,3 +60,19 @@ The following table lists the versions of ROCm-LS components for ROCm-LS 25.09, 
 :::{note}
 The hipCIM version remains unchanged in this release.
 :::
+
+## Known issues
+
+Here are the known issues for ROCm-LS components:
+
+### MONAI for AMD ROCm
+
+- No support for Python earlier than 3.10 and PyTorch earlier than 1.13.1.
+
+- Deprecated transforms such as AddChannel, AsChannelFirst, and others.
+
+- Some advanced or rare image file formats and non-NIfTI/DICOM derivatives might not have first-class support.
+
+- Legacy neural network architectures such as deprecated versions of DynUnet and old TorchVision wrappers are not supported.
+
+- Automatic installation of optional dependencies is not available. Some features require explicit installation.
