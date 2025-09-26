@@ -14,7 +14,7 @@ MONAI (Medical Open Network for AI) is a PyTorch-based, open-source framework de
 
 MONAI for AMD ROCm offers the following advantages:
 
-- GPU acceleration on AMD Instinct MI300 Series GPUs (gfx942).
+- GPU acceleration on AMD Instinct MI300X GPUs.
 
 - API compatibility with upstream MONAI without requiring any code changes.
 
