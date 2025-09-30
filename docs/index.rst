@@ -10,7 +10,7 @@ ROCm-LS documentation
 
   ROCm-LS is in an early access state. Running production workloads is not recommended.
 
-The ROCm Life Science (ROCm-LS) toolkit is a GPU-accelerated library suite developed for life science and healthcare applications, offering a robust set of tools optimized for AMD hardware. It is an open-source software collection for high-performance data science applications built on the core ROCm platform, which helps you accelerate life science processing and analyze workloads on AMD accelerators and GPUs.
+The ROCm Life Science (ROCm-LS) toolkit is a GPU-accelerated library suite developed for life science and healthcare applications, offering a robust set of tools optimized for AMD hardware. It is an open-source software collection for high-performance life science applications built on the core ROCm platform, which helps you accelerate life science processing and analyze workloads on AMD accelerators and GPUs.
 
 You can leverage ROCm-LS to accelerate both new and existing life science workloads, which helps you execute intensive applications with larger datasets relatively fast. ROCm-LS creates scalable solutions to address the needs of today's data-driven landscape. With ROCm-LS, you can build pre- and post-processing applications for your AI models and accelerate your existing life science pipelines with minimal effort.
 
