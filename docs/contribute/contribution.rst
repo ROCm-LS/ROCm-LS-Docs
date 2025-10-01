@@ -19,9 +19,9 @@ Use the GitHub Issues tab for issue creation.
 
 - Use your best judgment for issue creation. If your issue is already listed, upvote the issue and comment or post to provide additional details, such as how you reproduced this issue.
 
-- If you’re not sure whether your issue is same as the existing one, err on the side of caution and file your issue. You can add a comment to include the issue number (and link) for the similar issue. If we evaluate your issue to be the same as the existing one, we’ll close the duplicate.
+- If you're not sure whether your issue is same as the existing one, err on the side of caution and file your issue. You can add a comment to include the issue number (and link) for the similar issue. If we evaluate your issue to be the same as the existing one, we'll close the duplicate.
 
-- If your issue doesn’t exist, use the issue template to file a new issue.
+- If your issue doesn't exist, use the issue template to file a new issue.
 
   - When filing an issue, provide as much information as possible, including script output so we can collect information about your configuration. This helps reduce the time required to reproduce your issue.
 
@@ -69,7 +69,7 @@ Here is the ROCm-LS library structure as available in the GitHub repository:
 Coding style
 =============
 
-In general, follow the surrounding code style. C and C++ code is formatted using clang-format. Use the clang-format version installed with ROCm, which is present in the ``/opt/rocm/llvm/bin`` directory. Don't use your system’s built-in clang-format, as a difference in the version might lead to incorrect results.
+In general, follow the surrounding code style. C and C++ code is formatted using clang-format. Use the clang-format version installed with ROCm, which is present in the ``/opt/rocm/llvm/bin`` directory. Don't use your system's built-in clang-format, as a difference in the version might lead to incorrect results.
 
 To format a file, use:
 
@@ -136,7 +136,7 @@ When raising a PR in ROCm-LS, follow these guidelines:
 
 5. Ensure that the code builds successfully. This includes ensuring that the code can compile, is properly formatted, and all tests pass.
 
-6. Don’t break existing tests.
+6. Don't break existing tests.
 
 Process
 --------
