@@ -18,9 +18,6 @@ The ROCm-LS libraries provide tools to build a complete workflow for life scienc
 
 MONAI for AMD ROCm provides out-of-the-box integration with hipCIM, delivering accelerated image I/O and transformation operations for supported whole slide images (WSI). Together, hipCIM and MONAI enable researchers and healthcare professionals to streamline scientific imaging pipelines, boost computational performance, and speed up innovation across a wide array of life science use cases.
 
-.. note::
-
-  ROCm-LS is in an early access state. Running production workloads is not recommended.
 
 The documentation is structured as follows:
 
