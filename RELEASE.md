@@ -83,7 +83,7 @@ This release is based on the upstream [cuCIM v25.10.00 release](https://github.c
 
 #### Resolved issues
 
-- **Imaging integration:** Improved compatibility with Pillow’s Image.fromarray when using deprecated mode parameters, preventing runtime issues in visualization workflows.
+- **Imaging integration:** Improved compatibility with Pillow’s `Image.fromarray` when using deprecated mode parameters, preventing runtime issues in visualization workflows.
 
 - **Morphology and binary operations:** Refreshed binary morphology and `binary_fill_holes` components for correctness and stability.
 
