@@ -89,6 +89,6 @@ This release is based on the upstream [cuCIM v25.10.00 release](https://github.c
 
 :::{note}
 
-hipCIM targets functional parity with the most commonly used upstream APIs in the life sciences imaging. Minor behavioral differences might exist due to ROCm backend variations. It is advised to validate critical pipelines accordingly.
+hipCIM targets functional parity with the most commonly used upstream APIs in the life sciences imaging. Minor behavioral differences might exist due to ROCm backend variations. It's advised to validate critical pipelines accordingly.
 
 :::
