@@ -67,7 +67,7 @@ This release is based on the upstream [cuCIM v25.10.00 release](https://github.c
 
 #### Added
 
-- **ROCm versions:** Support for ROCm 7.0 with continued support to ROCm 6.4.
+- **ROCm versions:** Support for ROCm 7.0 with continued support for ROCm 6.4.
 
 - **Utility functions:** Montage and `compare_images` utility functions for quickly visualizing and validating image outputs in analysis workflows.
 
