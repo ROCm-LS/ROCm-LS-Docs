@@ -18,6 +18,8 @@ subtrees:
 
 - caption: Related content
   entries:
+  - url: https://rocm.blogs.amd.com/software-tools-optimization/rocm-ls-intro/README.html
+    title: ROCm-LS blogs
   - file: contribute/contribution
 
 - caption: About

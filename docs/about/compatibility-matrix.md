@@ -7,7 +7,7 @@ Use this matrix to view the ROCm-LS compatibility and system requirements across
         <thead>
             <tr>
                 <th>ROCm-LS version</th>
-                <th>GPU</th>
+                <th>AMD Instinct GPU</th>
                 <th>Supported components</th>
                 <th>ROCm version</th>
                 <th>Ubuntu version</th>
