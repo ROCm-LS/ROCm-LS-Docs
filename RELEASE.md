@@ -10,7 +10,7 @@ The following are notable new features and improvements in ROCm-LS 25.11 since t
 
     - GA status: hipCIM 25.10.00 exits Early Access (EA) and is now production-ready for life sciences imaging workloads on AMD GPUs.
 
-    - Upstream parity: hipCIM 25.10.00 is based on upstream cuCIM v25.10.00 for feature and API parity and easier migration from CUDA-based pipelines.
+    - Upstream parity: hipCIM 25.10.00 is based on upstream cuCIM v25.10.00 for feature and API parity, as well as easier migration from CUDA-based pipelines.
 
     - Region property computations and utility functions: This release delivers significant performance and feature improvements for GPU-accelerated imaging on AMD ROCm, with a focus on region property computations and utility functions for common image workflows.
 
