@@ -22,7 +22,7 @@ Use this matrix to view the ROCm-LS compatibility and system requirements across
             <tr>
                 <th rowspan="3">25.11</th>
                 <td rowspan="3">MI300X</td>
-                <td rowspan="2"><a href ="https://rocm.docs.amd.com/projects/hipCIM/en/latest/">hipCIM 25.10.00</a></td>
+                <td rowspan="2"><a href ="https://advanced-micro-devices-hipcim-internal--102.com.readthedocs.build/en/102/">hipCIM 25.10.00</a></td>
                 <td>7.0</td>
                 <td>24.04</td>
                 <td>3.12</td>
@@ -33,7 +33,7 @@ Use this matrix to view the ROCm-LS compatibility and system requirements across
                 <td>3.10</td>
             </tr>
             <tr>
-                <td><a href="https://rocm.docs.amd.com/projects/monai/en/latest/">MONAI 1.0.0 for AMD ROCm (EA)</a></td>
+                <td><a href="https://rocm.docs.amd.com/projects/monai/en/docs-25.09/">MONAI 1.0.0 for AMD ROCm (EA)</a></td>
                 <td>6.4</td>
                 <td>22.04</td>
                 <td>3.10</td>
