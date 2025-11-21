@@ -22,7 +22,7 @@ Use this matrix to view the ROCm-LS compatibility and system requirements across
             <tr>
                 <th rowspan="3">25.11</th>
                 <td rowspan="3">MI300X</td>
-                <td rowspan="2"><a href ="https://advanced-micro-devices-hipcim-internal--102.com.readthedocs.build/en/102/">hipCIM 25.10.00</a></td>
+                <td rowspan="2"><a href ="https://rocm.docs.amd.com/projects/hipcim-internal/en/latest/">hipCIM 25.10.00</a></td>
                 <td>7.0</td>
                 <td>24.04</td>
                 <td>3.12</td>

@@ -26,7 +26,7 @@ The documentation is structured as follows:
 
   .. grid-item-card:: Components
 
-    * `hipCIM <https://advanced-micro-devices-hipcim-internal--102.com.readthedocs.build/en/102/>`_
+    * `hipCIM <https://rocm.docs.amd.com/projects/hipcim-internal/en/latest/>`_
     * `MONAI for AMD ROCm <https://rocm.docs.amd.com/projects/monai/en/docs-25.09/>`_
 
   .. grid-item-card:: Related content
