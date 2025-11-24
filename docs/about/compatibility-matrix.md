@@ -5,6 +5,18 @@ Use this matrix to view the ROCm-LS compatibility and system requirements across
 <div class="pst-scrollable-table-container">
     <table id="compatibility-matrix" class="table">
         <thead>
+            <style>
+                table {
+                    border-collapse: collapse;
+                    border-spacing: 0;
+                    }
+                td, th {
+                    border: 1px solid black;
+                    }
+                tbody [rowspan] ~ td {
+                    border: 1px solid black;
+                    }
+            </style>
             <tr>
                 <th>ROCm-LS version</th>
                 <th>AMD Instinct GPU</th>
