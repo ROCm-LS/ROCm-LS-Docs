@@ -19,16 +19,3 @@ a svg:hover {
 .format-big-table {
     white-space: nowrap;
 }
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-td, th {
-  border: 1px solid black;
-}
-
-tbody [rowspan] ~ td {
-    border: 1px solid black;
-}

@@ -40,7 +40,7 @@ The following table lists the versions of ROCm-LS components for ROCm-LS 25.11, 
             <tr>
                 <td>Imaging</td>
                 <td><a href="https://rocm.docs.amd.com/projects/hipcim-internal/en/latest/">hipCIM</a></td>
-                <td>25.10.00</td>
+                <td>25.04.00&nbsp;&Rightarrow;&nbsp;<a href="#hipcim-25-10-00">25.10.00</a></td>
                 <td><a href="https://github.com/ROCm-LS/hipCIM"><i class="fab fa-github fa-lg"></i></a></td>
             </tr>
             <tr>
