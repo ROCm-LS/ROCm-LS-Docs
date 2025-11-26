@@ -6,15 +6,15 @@ The release notes provide a summary of notable changes since the previous ROCm-L
 
 The following are notable new features and improvements in ROCm-LS 25.11 since the release of 25.09. For detailed changes to individual components, see [detailed component changes](#detailed-component-changes).
 
-- **hipCIM General Availability (GA) 25.10.00:**
+- **hipCIM 25.10.00:**
 
-    - GA status: hipCIM 25.10.00 exits Early Access (EA) and is now production-ready for life sciences imaging workloads on AMD GPUs.
+    - hipCIM 25.10.00 exits Early Access (EA) and is now production-ready for life sciences imaging workloads on AMD GPUs.
 
-    - Upstream parity: hipCIM 25.10.00 is based on upstream [RAPIDS™ cuCIM v25.10.00](https://github.com/rapidsai/cucim/releases/tag/v25.10.00) for feature and API parity, as well as easier migration from CUDA-based pipelines.
+    - **Upstream parity:** hipCIM 25.10.00 is based on upstream [RAPIDS™ cuCIM v25.10.00](https://github.com/rapidsai/cucim/releases/tag/v25.10.00) for feature and API parity, as well as easier migration of your existing applications.
 
-    - Region property computations and utility functions: This release delivers significant performance and feature improvements for GPU-accelerated imaging on AMD ROCm, with a focus on region property computations and utility functions for common image workflows.
+    - **Region property computations and utility functions:** This release delivers significant performance and feature improvements for GPU-accelerated imaging on AMD ROCm, with a focus on region property computations and utility functions for common image workflows.
 
-- **ROCm 7.0 support:** ROCm-LS 25.11 adds support for ROCm 7.0 platforms and toolchains while continuing support for ROCm 6.4.
+- **ROCm 7.0 support:** ROCm-LS 25.11 adds support for ROCm 7.0 while continuing support for ROCm 6.4.
 
 - MONAI 1.0.0 is based on ROCm 6.4 and continues to be in EA.
 
