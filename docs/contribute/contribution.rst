@@ -8,7 +8,7 @@
 Contributing to ROCm-LS
 *************************
 
-To contribute to the ROCm-LS components, refer to the respective component's contribution page:
+To contribute to the ROCm-LS components, refer to the respective component's contribution guidelines:
 
 - `Contributing to hipCIM <https://github.com/ROCm-LS/hipCIM/blob/main/CONTRIBUTING.md>`_.
 
