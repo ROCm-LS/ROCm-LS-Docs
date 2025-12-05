@@ -10,7 +10,7 @@ subtrees:
 
 - caption: Components
   entries:
-  - url: https://rocm.docs.amd.com/projects/hipCIM/en/latest/
+  - url: https://rocm.docs.amd.com/projects/hipcim/en/docs-25.06/
     title: hipCIM
 
 - caption: Related content
