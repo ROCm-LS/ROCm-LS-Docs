@@ -40,7 +40,7 @@ Use this matrix to view the ROCm-LS compatibility and system requirements across
                 <td>3.12</td>
             </tr>
             <tr>
-                <td>6.4</td>
+                <td>6.4.3</td>
                 <td>22.04</td>
                 <td>3.10</td>
             </tr>
