@@ -19,11 +19,11 @@ Use this matrix to view the ROCm-LS compatibility and system requirements across
             </style>
             <tr>
                 <th>ROCm-LS version</th>
-                <th>AMD Instinct GPU</th>
-                <th>Supported components</th>
                 <th>ROCm version</th>
                 <th>Ubuntu version</th>
                 <th>Python version</th>
+                <th>Supported components</th>
+                <th>AMD Instinct GPU</th>
             </tr>
         </thead>
         <colgroup>
@@ -33,41 +33,44 @@ Use this matrix to view the ROCm-LS compatibility and system requirements across
         <tbody class="rocm-ls-components">
             <tr>
                 <th rowspan="3">25.11</th>
-                <td rowspan="3">MI325X</td>
-                <td rowspan="2"><a href ="https://rocm.docs.amd.com/projects/hipcim-internal/en/latest/">hipCIM 25.10.00</a></td>
                 <td>7.0.2</td>
                 <td>24.04</td>
                 <td>3.12</td>
+                <td rowspan="2"><a href ="https://rocm.docs.amd.com/projects/hipcim-internal/en/latest/">hipCIM 25.10.00</a></td>
+                <td>MI300A</td>
             </tr>
             <tr>
-                <td>6.4</td>
-                <td>22.04</td>
-                <td>3.10</td>
-            </tr>
-            <tr>
-                <td><a href="https://rocm.docs.amd.com/projects/monai/en/docs-25.09/">MONAI 1.0.0 for AMD ROCm (EA)</a></td>
                 <td>6.4.3</td>
                 <td>22.04</td>
                 <td>3.10</td>
+                <td>MI325X</td>
+            </tr>
+            <tr>
+                <td>6.4.3</td>
+                <td>22.04</td>
+                <td>3.10</td>
+                <td><a href="https://rocm.docs.amd.com/projects/monai/en/docs-25.09/">MONAI 1.0.0 for AMD ROCm (EA)</a></td>
+                <td>MI300X</td>
             </tr>
             <tr>
                 <th rowspan="2">25.09</th>
-                <td rowspan="2">MI325X</td>
-                <td><a href="https://rocm.docs.amd.com/projects/hipcim/en/docs-25.09/">hipCIM 25.04.00</a></td>
                 <td rowspan="2">6.4.3</td>
                 <td rowspan="2">22.04</td>
                 <td rowspan="2">3.10</td>
+                <td><a href="https://rocm.docs.amd.com/projects/hipCIM/en/docs-25.09/">hipCIM 25.04.00</a></td>
+                <td>MI325X</td>
             </tr>
             <tr>
                 <td><a href="https://rocm.docs.amd.com/projects/monai/en/docs-25.09/">MONAI 1.0.0 for AMD ROCm (EA)</a></td>
+                <td>MI300X</td>
             </tr>
             <tr>
                 <th>25.06</th>
-                <td>MI325X</td>
-                <td><a href = "https://rocm.docs.amd.com/projects/hipcim/en/docs-25.06/">hipCIM 25.04.00</a></td>
                 <td>6.4.3</td>
                 <td>22.04</td>
                 <td>3.10</td>
+                <td><a href = "https://rocm.docs.amd.com/projects/hipCIM/en/docs-25.06/">hipCIM 25.04.00</a></td>
+                <td>MI325X</td>
             </tr>
         </tbody>
     </table>
