@@ -9,7 +9,7 @@ subtrees:
 
 - caption: Components
   entries:
-  - url: https://rocm.docs.amd.com/projects/hipcim-internal/en/latest/
+  - url: https://rocm.docs.amd.com/projects/hipCIM/en/docs-25.11/
     title: hipCIM
   - url: https://rocm.docs.amd.com/projects/monai/en/docs-25.09/
     title: MONAI for AMD ROCm
