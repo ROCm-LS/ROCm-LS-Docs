@@ -45,7 +45,7 @@ The following table lists the versions of ROCm-LS components for ROCm-LS 25.11, 
             </tr>
             <tr>
                 <td>AI/ML</td>
-                <td><a href="https://rocm.docs.amd.com/projects/monai/en/docs-25.09/">MONAI for AMD ROCm</a></td>
+                <td><a href="https://rocm.docs.amd.com/projects/monai/en/docs-25.11/">MONAI for AMD ROCm</a></td>
                 <td>1.0.0</td>
                 <td><a href="https://github.com/ROCm-LS/monai"><i class="fab fa-github fa-lg"></i></a></td>
             </tr>

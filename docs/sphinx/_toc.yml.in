@@ -13,7 +13,7 @@ subtrees:
   entries:
   - url: https://rocm.docs.amd.com/projects/hipCIM/en/docs-25.11/
     title: hipCIM
-  - url: https://rocm.docs.amd.com/projects/monai/en/docs-25.09/
+  - url: https://rocm.docs.amd.com/projects/monai/en/docs-25.11/
     title: MONAI for AMD ROCm
 
 - caption: Related content
