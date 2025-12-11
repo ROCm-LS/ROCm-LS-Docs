@@ -46,7 +46,7 @@ Use this matrix to view the ROCm-LS compatibility and system requirements across
                 <td>3.10</td>
             </tr>
             <tr>
-                <td><a href="https://rocm.docs.amd.com/projects/monai/en/docs-25.09/">MONAI 1.0.0 for AMD ROCm (EA)</a></td>
+                <td><a href="https://rocm.docs.amd.com/projects/monai/en/docs-25.11/">MONAI 1.0.0 for AMD ROCm (EA)</a></td>
                 <td>MI300X</td>
                 <td>6.4.3</td>
                 <td>22.04</td>
