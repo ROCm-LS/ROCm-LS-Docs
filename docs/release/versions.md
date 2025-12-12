@@ -8,5 +8,6 @@
 
 | Version | Release date |
 | ------- | ------------ |
+| [25.11](https://rocm.docs.amd.com/projects/rocm-ls/en/docs-25.11/) | December, 2025 |
 | [25.09](https://rocm.docs.amd.com/projects/rocm-ls/en/docs-25.09/) | October, 2025 |
 | [25.06](https://rocm.docs.amd.com/projects/rocm-ls/en/docs-25.06/) | June, 2025 |

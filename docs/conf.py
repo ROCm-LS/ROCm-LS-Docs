@@ -11,9 +11,9 @@ if os.environ.get("READTHEDOCS", "") == "True":
     html_context["READTHEDOCS"] = True
 project = "ROCm for Life Science"
 
-version = "25.09"
+version = "25.11"
 release = version
-html_title = "ROCm-LS 25.09 documentation"
+html_title = "ROCm-LS 25.11 documentation"
 author = "Advanced Micro Devices, Inc."
 copyright = "Copyright (c) 2025 Advanced Micro Devices, Inc. All rights reserved."
 setting_all_article_info = True
@@ -33,7 +33,7 @@ there exists a non-null value mapped to docs_header_version, then the header in
 the documentation page will contain the given version string.
 '''
 html_context = {
-    "docs_header_version": "25.09"
+    "docs_header_version": "25.11"
 }
 
 html_static_path = ["sphinx/static/css"]
