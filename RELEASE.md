@@ -57,8 +57,8 @@ hipCIM is fully open source under the Apache-2.0 license and available for contr
 
 ## Compatibility matrix
 
-| Operating system | Supported component | ROCm version | Python version | AMD Instinct GPU |
-|------------------|---------------------|--------------|----------------|------------------|
-| Ubuntu 22.04 | hipCIM 25.04.00 | 6.4.3 | 3.10.12 | MI325X |
+| ROCm-LS version | Supported component | AMD Instinct GPU | ROCm version | Ubuntu version | Python version |
+|-----------------|---------------------|------------------|--------------|----------------|----------------|
+| 25.06 | hipCIM 25.04.00 | MI325X | 6.4.3 | 22.04 | 3.10 |
 
 For hipCIM supported features and limitations, see [Supported hipCIM functionality](https://rocm.docs.amd.com/projects/hipCIM/en/latest/reference/supported-functionality.html)
