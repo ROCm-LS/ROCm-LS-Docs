@@ -1,10 +1,10 @@
 .. meta::
-  :description: ROCm-LS toolkit is a collection of open-source software for high-performance data science applications built on the core ROCm platform.
+  :description: ROCm-LS toolkit is a collection of open-source software for high-performance life science applications built on the core ROCm platform.
   :keywords: ROCm-LS, life sciences
 
-**********************
-ROCm-LS documentation
-**********************
+*******************************
+ROCm Life Science documentation
+*******************************
 
 The AMD ROCm™ Life Science (ROCm-LS) toolkit is a GPU-accelerated library suite developed for life science and healthcare applications, offering a robust set of tools optimized for AMD hardware. It is an open-source software collection for high-performance life science applications built on the core ROCm platform, which helps you to accelerate life science processing and analyze workloads on AMD accelerators and GPUs.
 
@@ -27,7 +27,7 @@ The documentation is structured as follows:
   .. grid-item-card:: Components
 
     * `hipCIM <https://rocm.docs.amd.com/projects/hipCIM/en/docs-25.11/>`_
-    * `MONAI for AMD ROCm <https://rocm.docs.amd.com/projects/monai/en/docs-25.09/>`_
+    * `MONAI for AMD ROCm <https://rocm.docs.amd.com/projects/monai/en/docs-25.11/>`_
 
   .. grid-item-card:: Related content
 
