@@ -1,26 +1,18 @@
-# ROCm-LS 25.11 release notes
+# ROCm-LS 26.03 release notes
 
 The release notes provide a summary of notable changes since the previous ROCm-LS release.
 
 ## ROCm-LS release highlights
 
-The following are notable new features and improvements in ROCm-LS 25.11 since the release of 25.09. For detailed changes to individual components, see [detailed component changes](#detailed-component-changes).
+The following are notable new features and improvements in ROCm-LS 26.03 since the release of 25.11. For detailed changes to individual components, see [detailed component changes](#detailed-component-changes).
 
-- **hipCIM 25.10.00:**
+- **MONAI 1.5.2 for AMD ROCm** exits Early Access (EA) and is now production-ready for life sciences imaging workloads on AMD GPUs. It is based on upstream project [MONAI 1.5.2](https://github.com/Project-MONAI/MONAI/releases/tag/1.5.2.)
 
-    - hipCIM 25.10.00 exits Early Access (EA) and is now production-ready for life sciences imaging workloads on AMD GPUs.
-
-    - **Upstream parity:** hipCIM 25.10.00 is based on upstream [RAPIDS™ cuCIM v25.10.00](https://github.com/rapidsai/cucim/releases/tag/v25.10.00) for feature and API parity, as well as easier migration of your existing applications.
-
-    - **Region property computations and utility functions:** This release delivers significant performance and feature improvements for GPU-accelerated imaging on AMD ROCm, with a focus on region property computations and utility functions for common image workflows.
-
-- **ROCm 7.0 support:** ROCm-LS 25.11 adds support for ROCm 7.0 while continuing support for ROCm 6.4.
-
-- MONAI 1.0.0 is based on ROCm 6.4 and continues to be in EA.
+- **ROCm 7.2 support:** ROCm-LS 26.03 adds support for ROCm 7.2 while continuing support for ROCm 7.0.1.
 
 ## ROCm-LS components
 
-The following table lists the versions of ROCm-LS components for ROCm-LS 25.11, including any version changes from 25.09 to 25.11. Click the GitHub icon to go to the component's source code.
+The following table lists the versions of ROCm-LS components for ROCm-LS 26.03, including any version changes from 25.11 to 26.03. Click the GitHub icon to go to the component's source code.
 
 <div class="pst-scrollable-table-container">
     <table id="rocm-rn-components" class="table">
@@ -40,13 +32,13 @@ The following table lists the versions of ROCm-LS components for ROCm-LS 25.11, 
             <tr>
                 <td>Imaging</td>
                 <td><a href="https://rocm.docs.amd.com/projects/hipCIM/en/docs-25.11/">hipCIM</a></td>
-                <td>25.04.00&nbsp;&Rightarrow;&nbsp;<a href="#hipcim-25-10-00">25.10.00</a></td>
+                <td>25.10.00</td>
                 <td><a href="https://github.com/ROCm-LS/hipCIM"><i class="fab fa-github fa-lg"></i></a></td>
             </tr>
             <tr>
                 <td>AI/ML</td>
                 <td><a href="https://rocm.docs.amd.com/projects/monai/en/docs-25.09/">MONAI for AMD ROCm</a></td>
-                <td>1.0.0</td>
+                <td>1.5.0&nbsp;&Rightarrow;&nbsp;<a href="#monai-152">1.5.2</a></td>
                 <td><a href="https://github.com/ROCm-LS/monai"><i class="fab fa-github fa-lg"></i></a></td>
             </tr>
         </tbody>
@@ -54,7 +46,7 @@ The following table lists the versions of ROCm-LS components for ROCm-LS 25.11, 
 </div>
 
 :::{note}
-The MONAI version remains unchanged in this release.
+The hipCIM version remains unchanged in this release, with only added support for ROCm 7.2.
 :::
 
 ## Detailed component changes
@@ -63,32 +55,74 @@ The following sections describe key changes to the ROCm-LS components:
 
 ### hipCIM (25.10.00)
 
-This release is based on the upstream [cuCIM v25.10.00 release](https://github.com/rapidsai/cucim/releases/tag/v25.10.00) and includes the following enhancements:
+#### Added
+
+- **ROCm versions:** Support for ROCm 7.2 with continued support for ROCm 7.0.
+
+### MONAI (1.5.0)
 
 #### Added
 
-- **ROCm versions:** Support for ROCm 7.0 with continued support for ROCm 6.4.
+- Support for ROCm 7.0.2.
 
-- **Utility functions:** Montage and `compare_images` utility functions for quickly visualizing and validating image outputs in analysis workflows.
+- Support for PyTorch 2.7 and 2.8 for AMD ROCm.
 
-- **Geometry and morphology:** GPU-accelerated implementations of `convex_hull_image` and `convex_hull_object` functions.
+#### Removed
 
-- **API extensions:** Region properties API extended with `regionprops_table` and accelerated implementations across basic, intensity, moment-based, convexity, perimeter, and Euler characteristic properties.
+- Support for ROCm 6.4.3.
+
+### MONAI (1.5.2)
+
+This release is based on the upstream [MONAI 1.5.2](https://github.com/Project-MONAI/MONAI/releases/tag/1.5.2) release and includes the following enhancements:
+
+#### Added
+
+- Support for ROCm 7.2 with continued support for ROCm 7.0.1.
+
+- Support for PyTorch 2.7 and 2.8 for AMD ROCm.
+
+- `kwargs` in array and functional file.
+
+- Input validation to `ImageStats` class.
+
+- Support for optional conditioning in `PatchInferer`, `SliceInferer`, and `SlidingWindowInferer`.
+
+- Classifier free guidance unconditioned value.
+
+- Custom timeout to CI job in order to save resources.
+
+#### Changed
+
+- Updated the README badges to add research paper citation numbers.
+
+- Updated the supported version of Huggingface transformers.
 
 #### Optimized
 
-- End-to-end acceleration of `regionprops` and `regionprops_table`, reducing computation time and memory overhead on common segmentation and labeling tasks.
+- Improved `DiffusionModelEncoder` to support output linear layers of different dimensions.
 
-- Improved performance for `label2rgb`, offering faster visualization of labeled images in typical post-processing pipelines.
+- Improved documentation on the `datalist` format.
+
+- Refactored and cleaned up the tests.
+
+- Improved the orientation transform to use the "space" (LPS vs. RAS) of a metatensor by default.
 
 #### Resolved issues
 
-- **Imaging integration:** Improved compatibility with Pillow’s `Image.fromarray` when using deprecated mode parameters, preventing runtime issues in visualization workflows.
+- Fixed the insecure zip file extraction to address `GHSA-x6ww-pf9m-m73m`.
 
-- **Morphology and binary operations:** Refreshed binary morphology and `binary_fill_holes` components for correctness and stability.
+- Fixed the insecure use of `torch.load` and pickle to address `GHSA-6vm5-6jv9-rjpj` and `GHSA-p8cm-mm2v-gwjm`.
 
-:::{note}
+- Fixed Torchvision for loading pretrained weights using current syntax.
 
-hipCIM targets functional parity with the most commonly used upstream APIs in the life sciences imaging. Minor behavioral differences might exist due to ROCm backend variations. Validate critical pipelines accordingly.
+- Fixed bug in MAISI `vae`.
 
-:::
+- Ensured that invalid images in retinanet detector throw exception.
+
+- Fixed `HistogramNormalized` document.
+
+- Fixed build failure by pinning `pyamg` to versions ealier than 5.3.0.
+
+- Fixed hardcoded input `dim` in `DiffusionModelEncoder`.
+
+- Fixed `gdown` download failure.

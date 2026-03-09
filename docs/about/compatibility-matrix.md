@@ -32,6 +32,28 @@ Use this matrix to view the ROCm-LS compatibility and system requirements across
         </colgroup>
         <tbody class="rocm-ls-components">
             <tr>
+                <th rowspan="3">26.03</th>
+                <td><a href = https://rocm.docs.amd.com/projects/hipCIM/en/docs-26.03/">hipCIM 25.10.00</a></td>
+                <td>MI300A, MI325A, MI350A</td>
+                <td>7.2, 7.0.2</td>
+                <td>24.04</td>
+                <td>3.12</td>
+            </tr>
+            <tr>
+                <td><a href="https://rocm.docs.amd.com/projects/monai/en/docs-26.03/">MONAI 1.5.2 for AMD ROCm (EA)</a></td>
+                <td>MI300A, MI325A, MI350A</td>
+                <td>7.2, 7.0.2</td>
+                <td>24.04</td>
+                <td>3.12</td>
+            </tr>
+            <tr>
+                <td><a href="https://rocm.docs.amd.com/projects/monai/en/docs-25.11/">MONAI 1.5.0 for AMD ROCm (EA)</a></td>>
+                <td>MI300A, MI325A</td>
+                <td>7.0.2</td>
+                <td>24.04</td>
+                <td>3.12</td>
+            </tr>
+            <tr>
                 <th rowspan="3">25.11</th>
                 <td rowspan="2"><a href ="https://rocm.docs.amd.com/projects/hipCIM/en/docs-25.11/">hipCIM 25.10.00</a></td>
                 <td>MI300A</td>
