@@ -57,7 +57,7 @@ The following sections describe key changes to the ROCm-LS components:
 
 #### Added
 
-- **ROCm versions:** Support for ROCm 7.2 with continued support for ROCm 7.0.
+- Support for ROCm 7.2 with continued support for ROCm 7.0.
 
 ### MONAI (1.5.0)
 
