@@ -8,7 +8,7 @@ The following are notable new features and improvements in ROCm-LS 26.03 since t
 
 - **MONAI 1.5.2 for AMD ROCm** exits Early Access (EA) and is now production-ready for life sciences imaging workloads on AMD GPUs. It is based on upstream project [MONAI 1.5.2](https://github.com/Project-MONAI/MONAI/releases/tag/1.5.2.)
 
-- **ROCm 7.2 support:** ROCm-LS 26.03 adds support for ROCm 7.2 while continuing support for ROCm 7.0.1.
+- **ROCm 7.2.0 support:** ROCm-LS 26.03 adds support for ROCm 7.2.0 while continuing support for ROCm 7.0.1.
 
 ## ROCm-LS components
 
@@ -46,7 +46,7 @@ The following table lists the versions of ROCm-LS components for ROCm-LS 26.03, 
 </div>
 
 :::{note}
-The hipCIM version remains unchanged in this release, with only added support for ROCm 7.2.
+The hipCIM version remains unchanged in this release, with only added support for ROCm 7.2.0.
 :::
 
 ## Detailed component changes
@@ -57,19 +57,7 @@ The following sections describe key changes to the ROCm-LS components:
 
 #### Added
 
-- Support for ROCm 7.2 with continued support for ROCm 7.0.
-
-### MONAI (1.5.0)
-
-#### Added
-
-- Support for ROCm 7.0.2.
-
-- Support for PyTorch 2.7 and 2.8 for AMD ROCm.
-
-#### Removed
-
-- Support for ROCm 6.4.3.
+- Support for ROCm 7.2.0 with continued support for ROCm 7.0.1.
 
 ### MONAI (1.5.2)
 
@@ -77,7 +65,7 @@ This release is based on the upstream [MONAI 1.5.2](https://github.com/Project-M
 
 #### Added
 
-- Support for ROCm 7.2 with continued support for ROCm 7.0.1.
+- Support for ROCm 7.2.0 with continued support for ROCm 7.0.1.
 
 - Support for PyTorch 2.7 and 2.8 for AMD ROCm.
 
@@ -126,3 +114,15 @@ This release is based on the upstream [MONAI 1.5.2](https://github.com/Project-M
 - Fixed hardcoded input `dim` in `DiffusionModelEncoder`.
 
 - Fixed `gdown` download failure.
+
+### MONAI (1.5.0)
+
+#### Added
+
+- Support for ROCm 7.0.2.
+
+- Support for PyTorch 2.7 and 2.8 for AMD ROCm.
+
+#### Removed
+
+- Support for ROCm 6.4.3.

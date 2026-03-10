@@ -34,24 +34,16 @@ Use this matrix to view the ROCm-LS compatibility and system requirements across
             <tr>
                 <th rowspan="3">26.03</th>
                 <td><a href = https://rocm.docs.amd.com/projects/hipCIM/en/docs-26.03/">hipCIM 25.10.00</a></td>
-                <td>MI300A, MI325A, MI350A</td>
-                <td>7.2, 7.0.2</td>
-                <td>24.04</td>
-                <td>3.12</td>
+                <td rowspan ="3">MI300X, MI325X, MI355X</td>
+                <td rowspan="3">7.2.0, 7.0.2</td>
+                <td rowspan = "3">24.04</td>
+                <td rowspan="3">3.12</td>
             </tr>
             <tr>
-                <td><a href="https://rocm.docs.amd.com/projects/monai/en/docs-26.03/">MONAI 1.5.2 for AMD ROCm (EA)</a></td>
-                <td>MI300A, MI325A, MI350A</td>
-                <td>7.2, 7.0.2</td>
-                <td>24.04</td>
-                <td>3.12</td>
+                <td><a href="https://rocm.docs.amd.com/projects/monai/en/docs-26.03/">MONAI 1.5.2 for AMD ROCm</a></td>
             </tr>
             <tr>
                 <td><a href="https://rocm.docs.amd.com/projects/monai/en/docs-25.11/">MONAI 1.5.0 for AMD ROCm (EA)</a></td>>
-                <td>MI300A, MI325A</td>
-                <td>7.0.2</td>
-                <td>24.04</td>
-                <td>3.12</td>
             </tr>
             <tr>
                 <th rowspan="3">25.11</th>
@@ -68,7 +60,7 @@ Use this matrix to view the ROCm-LS compatibility and system requirements across
                 <td>3.10</td>
             </tr>
             <tr>
-                <td><a href="https://rocm.docs.amd.com/projects/monai/en/docs-25.09/">MONAI 1.0.0 for AMD ROCm (EA)</a></td>
+                <td><a href="https://rocm.docs.amd.com/projects/monai/en/docs-25.09/">MONAI 1.5.0 for AMD ROCm (EA)</a></td>
                 <td>MI300X</td>
                 <td>6.4.3</td>
                 <td>22.04</td>
@@ -83,7 +75,7 @@ Use this matrix to view the ROCm-LS compatibility and system requirements across
                 <td rowspan="2">3.10</td>
             </tr>
             <tr>
-                <td><a href="https://rocm.docs.amd.com/projects/monai/en/docs-25.09/">MONAI 1.0.0 for AMD ROCm (EA)</a></td>
+                <td><a href="https://rocm.docs.amd.com/projects/monai/en/docs-25.09/">MONAI 1.5.0 for AMD ROCm (EA)</a></td>
                 <td>MI300X</td>
             </tr>
             <tr>
