@@ -33,7 +33,7 @@ Use this matrix to view the ROCm-LS compatibility and system requirements across
         <tbody class="rocm-ls-components">
             <tr>
                 <th rowspan="3">26.03</th>
-                <td><a href = https://rocm.docs.amd.com/projects/hipCIM/en/docs-26.03/">hipCIM 25.10.00</a></td>
+                <td><a href = "https://rocm.docs.amd.com/projects/hipCIM/en/docs-26.03/">hipCIM 25.10.00</a></td>
                 <td rowspan ="3">MI300X, MI325X, MI355X</td>
                 <td rowspan="3">7.2.0, 7.0.2</td>
                 <td rowspan = "3">24.04</td>
