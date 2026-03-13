@@ -38,7 +38,7 @@ The following table lists the versions of ROCm-LS components for ROCm-LS 26.03, 
             <tr>
                 <td>AI/ML</td>
                 <td><a href="https://rocm.docs.amd.com/projects/monai/en/docs-25.09/">MONAI for AMD ROCm</a></td>
-                <td>1.5.0&nbsp;&Rightarrow;&nbsp;<a href="#monai-152">1.5.2</a></td>
+                <td>1.5.0&nbsp;&Rightarrow;&nbsp;<a href="#monai-1-5-2">1.5.2</a></td>
                 <td><a href="https://github.com/ROCm-LS/monai"><i class="fab fa-github fa-lg"></i></a></td>
             </tr>
         </tbody>
@@ -115,6 +115,14 @@ This release is based on the upstream [MONAI 1.5.2](https://github.com/Project-M
 
 - Fixed `gdown` download failure.
 
+#### Known issues
+
+- GMM layer failure on Multi-GPU.
+
+- MIOpen 3D backward pass errors on Multi‑GPU.
+
+- 3D grad‑based visualization not functional on Multi‑GPU.
+
 ### MONAI (1.5.0)
 
 #### Added
@@ -126,3 +134,9 @@ This release is based on the upstream [MONAI 1.5.2](https://github.com/Project-M
 #### Removed
 
 - Support for ROCm 6.4.3.
+
+#### Known issues
+
+- GMM layer failure on Multi-GPU.
+
+- MIOpen issue on Multi‑GPU.
