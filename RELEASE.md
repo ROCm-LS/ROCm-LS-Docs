@@ -71,7 +71,7 @@ This release is based on the upstream [MONAI 1.5.2](https://github.com/Project-M
 
 - `kwargs` in array and functional file.
 
-- Input validation to `ImageStats` class.
+- Input validation for the `ImageStats` class.
 
 - Support for optional conditioning in `PatchInferer`, `SliceInferer`, and `SlidingWindowInferer`.
 
