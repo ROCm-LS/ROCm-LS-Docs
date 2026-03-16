@@ -109,7 +109,7 @@ This release is based on the upstream [MONAI 1.5.2](https://github.com/Project-M
 
 - Fixed the `HistogramNormalized` document.
 
-- Fixed build failure by pinning `pyamg` to versions ealier than 5.3.0.
+- Fixed a build failure by pinning `pyamg` to versions earlier than 5.3.0.
 
 - Fixed hardcoded input `dim` in `DiffusionModelEncoder`.
 
