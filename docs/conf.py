@@ -45,4 +45,4 @@ extensions = ["rocm_docs"]
 external_toc_path = "./sphinx/_toc.yml"
 
 exclude_patterns = ['.venv']
-external_project_remote_repository=""
+external_project_remote_repository = ""  # Intentionally left empty to disable remote repository mapping
