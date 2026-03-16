@@ -107,7 +107,7 @@ This release is based on the upstream [MONAI 1.5.2](https://github.com/Project-M
 
 - Ensured that invalid images in the RetinaNet detector throw an exception.
 
-- Fixed `HistogramNormalized` document.
+- Fixed the `HistogramNormalized` document.
 
 - Fixed build failure by pinning `pyamg` to versions ealier than 5.3.0.
 
