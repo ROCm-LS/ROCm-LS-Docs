@@ -6,7 +6,7 @@ The release notes provide a summary of notable changes since the previous ROCm-L
 
 The following are notable new features and improvements in ROCm-LS 26.03 since the release of 25.11. For detailed changes to individual components, see [detailed component changes](#detailed-component-changes).
 
-- **MONAI 1.5.2 for AMD ROCm** exits Early Access (EA) and is now production-ready for life sciences imaging workloads on AMD GPUs. It is based on upstream project [MONAI 1.5.2](https://github.com/Project-MONAI/MONAI/releases/tag/1.5.2)
+- **MONAI 1.5.2 for AMD ROCm** exits Early Access (EA) and is now production ready for life sciences imaging workloads on AMD GPUs. It is based on the upstream project [MONAI 1.5.2](https://github.com/Project-MONAI/MONAI/releases/tag/1.5.2)
 
 - **ROCm 7.2.0 support:** ROCm-LS 26.03 adds support for ROCm 7.2.0 while continuing support for ROCm 7.0.1.
 
