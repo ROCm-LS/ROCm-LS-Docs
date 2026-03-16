@@ -34,4 +34,4 @@ The documentation is structured as follows:
     * `ROCm-LS blogs <https://instinct.docs.amd.com/latest/life-science/ROCmLS-Blogs.html>`_
     * :ref:`rocm-ls-contribution`
 
-For ready-to-run sample codes that demonstrate the ROCm-LS capabilities on the AMD ROCm platform, see the `ROCm-LS examples <https://github.com/ROCm-LS/examples>`_.
+For ready-to-run code samples that demonstrate the ROCm-LS capabilities on the AMD ROCm platform, see the `ROCm-LS examples <https://github.com/ROCm-LS/examples>`_.
