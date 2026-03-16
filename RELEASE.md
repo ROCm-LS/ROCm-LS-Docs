@@ -83,7 +83,7 @@ This release is based on the upstream [MONAI 1.5.2](https://github.com/Project-M
 
 - Updated the README badges to add research paper citation numbers.
 
-- Updated the supported version of Huggingface transformers.
+- Updated the supported version of Hugging Face transformers.
 
 #### Optimized
 
