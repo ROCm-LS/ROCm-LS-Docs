@@ -77,7 +77,7 @@ This release is based on the upstream [MONAI 1.5.2](https://github.com/Project-M
 
 - Classifier free guidance unconditioned value.
 
-- Custom timeout to CI job in order to save resources.
+- Provision to pass custom timeout to the CI job to save resources.
 
 #### Changed
 

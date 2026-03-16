@@ -55,7 +55,7 @@ Use this matrix to view the ROCm-LS compatibility and system requirements across
                 <td rowspan="2">3.12</td>
             </tr>
             <tr>
-                <td><a href="https://rocm.docs.amd.com/projects/monai/en/docs-25.09/">MONAI 1.5.0 for AMD ROCm (EA)</a></td>
+                <td><a href="https://rocm.docs.amd.com/projects/monai/en/docs-25.11/">MONAI 1.5.0 for AMD ROCm (EA)</a></td>
                 <td>7.0.2</td>
             </tr>
             <tr>
