@@ -105,7 +105,7 @@ This release is based on the upstream [MONAI 1.5.2](https://github.com/Project-M
 
 - Fixed bug in MAISI `vae`.
 
-- Ensured that invalid images in retinanet detector throw exception.
+- Ensured that invalid images in the RetinaNet detector throw an exception.
 
 - Fixed `HistogramNormalized` document.
 
