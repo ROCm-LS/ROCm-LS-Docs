@@ -101,7 +101,7 @@ This release is based on the upstream [MONAI 1.5.2](https://github.com/Project-M
 
 - Fixed the insecure use of `torch.load` and pickle to address `GHSA-6vm5-6jv9-rjpj` and `GHSA-p8cm-mm2v-gwjm`.
 
-- Fixed Torchvision for loading pretrained weights using current syntax.
+- Fixed Torchvision for loading pretrained weights using the current syntax.
 
 - Fixed bug in MAISI `vae`.
 
