@@ -2,7 +2,7 @@
 
 The release notes provide a summary of notable changes since the previous ROCm-LS release.
 
-## ROCm-LS release highlights
+## Release highlights
 
 The following are notable new features and improvements in ROCm-LS 26.03 since the release of 25.11. For detailed changes to individual components, see [detailed component changes](#detailed-component-changes).
 
