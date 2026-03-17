@@ -8,7 +8,7 @@ The following are notable new features and improvements in ROCm-LS 26.03 since t
 
 - **MONAI 1.5.2 for AMD ROCm** exits Early Access (EA) and is now production ready for life sciences imaging workloads on AMD GPUs. It is based on the upstream project [MONAI 1.5.2](https://github.com/Project-MONAI/MONAI/releases/tag/1.5.2)
 
-- **ROCm 7.2.0 support:** ROCm-LS 26.03 adds support for ROCm 7.2.0 while continuing support for ROCm 7.0.1.
+- **ROCm 7.2.0 support:** ROCm-LS 26.03 adds support for ROCm 7.2.0 while continuing support for ROCm 7.0.2.
 
 ## ROCm-LS components
 
@@ -57,7 +57,7 @@ The following sections describe key changes to the ROCm-LS components:
 
 #### Added
 
-- Support for ROCm 7.2.0 with continued support for ROCm 7.0.1.
+- Support for ROCm 7.2.0 with continued support for ROCm 7.0.2.
 
 ### MONAI (1.5.2)
 
@@ -65,23 +65,19 @@ This release is based on the upstream [MONAI 1.5.2](https://github.com/Project-M
 
 #### Added
 
-- Support for ROCm 7.2.0 with continued support for ROCm 7.0.1.
+- Support for ROCm 7.2.0 with continued support for ROCm 7.0.2.
 
 - Support for PyTorch 2.7 and 2.8 for AMD ROCm.
-
-- `kwargs` in array and functional file.
 
 - Input validation for the `ImageStats` class.
 
 - Support for optional conditioning in `PatchInferer`, `SliceInferer`, and `SlidingWindowInferer`.
 
-- Classifier free guidance unconditioned value.
+- A `cfg_fill_value` parameter to classifier-free guidance sampling to help users control the value used for the unconditioned tensor instead of the previously hard-coded value `-1`.
 
 - Provision to pass custom timeout to the CI job to save resources.
 
 #### Changed
-
-- Updated the README badges to add research paper citation numbers.
 
 - Updated the supported version of Hugging Face transformers.
 
@@ -94,6 +90,8 @@ This release is based on the upstream [MONAI 1.5.2](https://github.com/Project-M
 - Refactored and cleaned up the tests.
 
 - Improved the orientation transform to use the "space" (LPS vs. RAS) of a metatensor by default.
+
+- Ensured that additional keyword arguments `**kwargs` are correctly propagated through `ResizeWithPadOrCrop` and related zoom, pad, and crop operations, preventing extra parameters from being silently ignored in certain workflows.
 
 #### Resolved issues
 
