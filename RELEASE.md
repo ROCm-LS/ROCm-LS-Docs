@@ -59,6 +59,18 @@ The following sections describe key changes to the ROCm-LS components:
 
 - Support for ROCm 7.2.0 with continued support for ROCm 7.0.2.
 
+- Support for Ubuntu 24.04 and Python 3.12.
+
+- Support for AMD Instinct GPU MI300X and MI355X.
+
+#### Removed
+
+- Support for ROCm 6.4.3.
+
+- Support for Ubuntu 22.04 and Python 3.10.
+
+- Support for AMD Instinct GPU MI300A.
+
 ### MONAI (1.5.2)
 
 This release is based on the upstream [MONAI 1.5.2](https://github.com/Project-MONAI/MONAI/releases/tag/1.5.2) release and includes the following enhancements:
@@ -115,26 +127,14 @@ This release is based on the upstream [MONAI 1.5.2](https://github.com/Project-M
 
 #### Known issues
 
-- GMM layer failure on Multi-GPU.
+- Issues with GMM kernel on Multi-GPU.
 
-- MIOpen 3D backward pass errors on Multi‑GPU.
-
-- 3D grad‑based visualization not functional on Multi‑GPU.
+- MIOpen runtime issue with 3D data on Multi‑GPU for 3D convolutions.
 
 ### MONAI (1.5.0)
 
-#### Added
-
-- Support for ROCm 7.0.2.
-
-- Support for PyTorch 2.7 and 2.8 for AMD ROCm.
-
-#### Removed
-
-- Support for ROCm 6.4.3.
-
 #### Known issues
 
-- GMM layer failure on Multi-GPU.
+- Issues with GMM kernel on Multi-GPU.
 
-- MIOpen issue on Multi‑GPU.
+- MIOpen runtime issue with 3D data on Multi‑GPU for 3D convolutions.
