@@ -4,9 +4,9 @@ The release notes provide a summary of notable changes since the previous ROCm-L
 
 ## Release highlights
 
-The following are notable new features and improvements in ROCm-LS 26.03 since the release of 25.11. For detailed changes to individual components, see [detailed component changes](#detailed-component-changes).
+The following are notable new features and improvements in ROCm-LS 26.03 since the 25.11 release. For detailed changes to individual components, see [detailed component changelogs](#detailed-component-changelogs).
 
-- **MONAI 1.5.2 for AMD ROCm** exits Early Access (EA) and is now production ready for life sciences imaging workloads on AMD GPUs. It is based on the upstream project [MONAI 1.5.2](https://github.com/Project-MONAI/MONAI/releases/tag/1.5.2)
+- **MONAI 1.5.2 on ROCm** exits Early Access (EA) state and is now production-ready for life sciences imaging workloads on AMD GPUs. It's based on the upstream project [MONAI 1.5.2](https://github.com/Project-MONAI/MONAI/releases/tag/1.5.2)
 
 - **ROCm 7.2.0 support:** ROCm-LS 26.03 adds support for ROCm 7.2.0 while continuing support for ROCm 7.0.2.
 
@@ -37,8 +37,8 @@ The following table lists the versions of ROCm-LS components for ROCm-LS 26.03, 
             </tr>
             <tr>
                 <td>AI/ML</td>
-                <td><a href="https://rocm.docs.amd.com/projects/monai/en/docs-25.09/">MONAI for AMD ROCm</a></td>
-                <td>1.5.0&nbsp;&Rightarrow;&nbsp;<a href="#monai-1-5-2">1.5.2</a></td>
+                <td><a href="https://rocm.docs.amd.com/projects/monai/en/docs-25.09/">MONAI on ROCm</a></td>
+                <td>1.5.0&nbsp;&Rightarrow;&nbsp;<a href="#monai-on-rocm-1-5-2">1.5.2</a></td>
                 <td><a href="https://github.com/ROCm-LS/monai"><i class="fab fa-github fa-lg"></i></a></td>
             </tr>
         </tbody>
@@ -46,10 +46,10 @@ The following table lists the versions of ROCm-LS components for ROCm-LS 26.03, 
 </div>
 
 :::{note}
-The hipCIM version remains unchanged in this release, with only added support for ROCm 7.2.0.
+The hipCIM version remains unchanged in this release, with only support for ROCm 7.2.0 added.
 :::
 
-## Detailed component changes
+## Detailed component changelogs
 
 The following sections describe key changes to the ROCm-LS components:
 
@@ -57,7 +57,7 @@ The following sections describe key changes to the ROCm-LS components:
 
 #### Added
 
-- Support for ROCm 7.2.0 with continued support for ROCm 7.0.2.
+- Support for ROCm 7.2.0 (support for ROCm 7.0.2 is maintained).
 
 - Support for Ubuntu 24.04 and Python 3.12.
 
@@ -71,7 +71,7 @@ The following sections describe key changes to the ROCm-LS components:
 
 - Support for AMD Instinct GPU MI300A.
 
-### MONAI (1.5.2)
+### MONAI on ROCm (1.5.2)
 
 This release is based on the upstream [MONAI 1.5.2](https://github.com/Project-MONAI/MONAI/releases/tag/1.5.2) release and includes the following enhancements:
 
@@ -87,7 +87,7 @@ This release is based on the upstream [MONAI 1.5.2](https://github.com/Project-M
 
 - A `cfg_fill_value` parameter to classifier-free guidance sampling to help users control the value used for the unconditioned tensor instead of the previously hard-coded value `-1`.
 
-- Provision to pass custom timeout to the CI job to save resources.
+- Provision to pass a custom timeout to the CI job to save resources.
 
 #### Changed
 
@@ -131,7 +131,7 @@ This release is based on the upstream [MONAI 1.5.2](https://github.com/Project-M
 
 - MIOpen runtime issue with 3D data on Multi‑GPU for 3D convolutions.
 
-### MONAI (1.5.0)
+### MONAI on ROCm (1.5.0)
 
 #### Known issues
 
