@@ -14,7 +14,7 @@ subtrees:
   entries:
   - url: https://rocm.docs.amd.com/projects/hipcim-internal/en/swraw-doc-26.03/
     title: hipCIM
-  - url: https://rocm.docs.amd.com/projects/monai-internal/en/swraw-doc-26.03/
+  - url: https://rocm.docs.amd.com/projects/monai-internal/en/swraw-doc-26.03-fixed/
     title: MONAI for AMD ROCm
 
 - caption: Related content

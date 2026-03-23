@@ -61,7 +61,7 @@ The following sections describe key changes to the ROCm-LS components:
 
 - Support for Ubuntu 24.04 and Python 3.12.
 
-- Support for AMD Instinct GPU MI300X and MI355X.
+- Support for AMD Instinct™ GPUs MI300X and MI355X.
 
 #### Removed
 

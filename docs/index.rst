@@ -14,9 +14,9 @@ The ROCm-LS libraries provide tools to build a complete workflow for life scienc
 
 - **hipCIM:** A high-performance GPU imaging library that accelerates and scales image processing workflows on AMD Instinct™ GPUs.
 
-- **MONAI for AMD ROCm:** An open-source framework that brings advanced deep learning capabilities for medical imaging to AMD GPU platforms.
+- **MONAI on ROCm:** An open-source framework that brings advanced deep learning capabilities for medical imaging to AMD GPU platforms.
 
-MONAI for AMD ROCm provides out-of-the-box integration with hipCIM, enabling accelerated image I/O and transformation operations for supported whole-slide images (WSI). Together, hipCIM and MONAI enable researchers and healthcare professionals to streamline scientific imaging pipelines, enhance computational performance, and accelerate innovation across a wide range of life science use cases.
+MONAI on ROCm provides out-of-the-box integration with hipCIM, enabling accelerated image I/O and transformation operations for supported whole-slide images (WSI). Together, hipCIM and MONAI on ROCm enable researchers and healthcare professionals to streamline scientific imaging pipelines, enhance computational performance, and accelerate innovation across a wide range of life science use cases.
 
 
 The documentation is structured as follows:
@@ -27,7 +27,7 @@ The documentation is structured as follows:
   .. grid-item-card:: Components
 
     * `hipCIM <https://rocm.docs.amd.com/projects/hipcim-internal/en/swraw-doc-26.03/>`_
-    * `MONAI for AMD ROCm <https://rocm.docs.amd.com/projects/monai-internal/en/swraw-doc-26.03/>`_
+    * `MONAI on ROCm <https://rocm.docs.amd.com/projects/monai-internal/en/swraw-doc-26.03-fixed/>`_
 
   .. grid-item-card:: Related content
 
