@@ -20,7 +20,7 @@ Use the following matrix to view the ROCm-LS compatibility and system requiremen
    :class: compat-matrix format-big-table
 
    +------------------------+--------------------------------------+------------------+--------------+----------------+----------------+
-   |  ROCm-LS version       |  Supported component                 | AMD Instinct™ GPU | ROCm version | Ubuntu version | Python version |
+   |  ROCm-LS version       |  Supported component                 | AMD Instinct GPU | ROCm version | Ubuntu version | Python version |
    +========================+======================================+==================+==============+================+================+
    | :version-start:`26.03` | `hipCIM 25.10.00                     | MI355X,          | 7.2.0,       | 24.04          | 3.12           |
    |                        | <https://rocm.docs.amd.com/projects  | MI325X,          | 7.0.2        |                |                |
