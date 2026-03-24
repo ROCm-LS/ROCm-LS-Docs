@@ -46,7 +46,7 @@ The following table lists the versions of ROCm-LS components for ROCm-LS 26.03, 
 </div>
 
 :::{note}
-The hipCIM version remains unchanged in this release, with only support for ROCm 7.2.0 added.
+The hipCIM version remains unchanged in this release.
 :::
 
 ## Detailed component changelogs
