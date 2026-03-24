@@ -130,11 +130,3 @@ This release is based on the upstream [MONAI 1.5.2](https://github.com/Project-M
 - Issues with GMM kernel on Multi-GPU.
 
 - MIOpen runtime issue with 3D data on Multi‑GPU for 3D convolutions.
-
-### MONAI on ROCm (1.5.0)
-
-#### Known issues
-
-- Issues with GMM kernel on Multi-GPU.
-
-- MIOpen runtime issue with 3D data on Multi‑GPU for 3D convolutions.
