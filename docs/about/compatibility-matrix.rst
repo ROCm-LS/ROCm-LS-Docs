@@ -36,16 +36,18 @@ Use the following matrix to view the ROCm-LS compatibility and system requiremen
    |                        | /hipCIM/en/docs-25.11/>`_            | MI325X            | 6.4.3        | 22.04          | 3.10           |
    +                        +--------------------------------------+-------------------+--------------+----------------+----------------+
    |                        | `MONAI 1.5.0 on ROCm (EA)            | MI300X            | 6.4.3        | 22.04          | 3.10           |
-   |                        | <https://rocm.docs.amd.com/projects/ |                   |              |                |                |
-   |                        | monai/en/docs-25.11/>`_              |                   |              |                |                |
+   |                        | <https://advanced-micro-devices-demo |                   |              |                |                |
+   |                        | --22.com.readthedocs.build/projects/ |                   |              |                |                |
+   |                        | monai/en/22/                         |                   |              |                |                |
    +------------------------+--------------------------------------+-------------------+--------------+----------------+----------------+
    | :version-start:`25.09` | `hipCIM 25.04.00                     | MI325X            | 6.4.3        | 22.04          | 3.10           |
    |                        | <https://rocm.docs.amd.com/projects  |                   |              |                |                |
    |                        | /hipCIM/en/docs-25.09/>`_            |                   |              |                |                |
    +                        +--------------------------------------+-------------------+--------------+----------------+----------------+
    |                        | `MONAI 1.5.0 on ROCm (EA)            | MI300X            | 6.4.3        | 22.04          | 3.10           |
-   |                        | <https://rocm.docs.amd.com/projects/ |                   |              |                |                |
-   |                        | monai/en/docs-25.09/>`_              |                   |              |                |                |
+   |                        | <https://advanced-micro-devices-demo |                   |              |                |                |
+   |                        | --22.com.readthedocs.build/projects/ |                   |              |                |                |
+   |                        | monai/en/22/                         |                   |              |                |                |
    +------------------------+--------------------------------------+-------------------+--------------+----------------+----------------+
    | :version-start:`25.06` | `hipCIM 25.04.00                     | MI325X            | 6.4.3        | 22.04          | 3.10           |
    |                        | <https://rocm.docs.amd.com/projects  |                   |              |                |                |
