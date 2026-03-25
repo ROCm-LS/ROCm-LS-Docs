@@ -59,9 +59,7 @@ The following sections describe key changes to the ROCm-LS components:
 
 - Support for ROCm 7.2.0 (support for ROCm 7.0.2 is maintained).
 
-- Support for Ubuntu 24.04 and Python 3.12.
-
-- Support for AMD Instinct™ GPUs MI300X and MI355X.
+- Support for AMD Instinct™ GPUs MI355X and MI300X.
 
 #### Removed
 
@@ -73,57 +71,17 @@ The following sections describe key changes to the ROCm-LS components:
 
 ### MONAI on ROCm (1.5.2)
 
-This release is based on the upstream [MONAI 1.5.2](https://github.com/Project-MONAI/MONAI/releases/tag/1.5.2) release and includes the following enhancements:
+This release is based on the upstream [MONAI 1.5.2](https://github.com/Project-MONAI/MONAI/releases/tag/1.5.2) release. Apart from the changes introduced in the [upstream MONAI 1.5.2](https://github.com/Project-MONAI/MONAI/compare/releasing/1.5.0...1.5.2), MONAI on ROCm 1.5.2 includes the following changes:
 
 #### Added
 
-- Support for ROCm 7.2.0 with continued support for ROCm 7.0.2.
+- Support for ROCm 7.2.0.
 
-- Support for PyTorch 2.7 and 2.8 for AMD ROCm.
+- Support for [PyTorch for AMD ROCm](https://pytorch.org/blog/pytorch-for-amd-rocm-platform-now-available-as-python-package/) 2.8 and later.
 
-- Input validation for the `ImageStats` class.
+- Support for AMD Instinct GPUs MI355X and MI325X.
 
-- Support for optional conditioning in `PatchInferer`, `SliceInferer`, and `SlidingWindowInferer`.
-
-- A `cfg_fill_value` parameter to classifier-free guidance sampling to help users control the value used for the unconditioned tensor instead of the previously hard-coded value `-1`.
-
-- Provision to pass a custom timeout to the CI job to save resources.
-
-#### Changed
-
-- Updated the supported version of Hugging Face transformers.
-
-#### Optimized
-
-- Improved `DiffusionModelEncoder` to support output linear layers of different dimensions.
-
-- Improved documentation on the `datalist` format.
-
-- Refactored and cleaned up the tests.
-
-- Improved the orientation transform to use the "space" (LPS vs. RAS) of a metatensor by default.
-
-- Ensured that additional keyword arguments `**kwargs` are correctly propagated through `ResizeWithPadOrCrop` and related zoom, pad, and crop operations, preventing extra parameters from being silently ignored in certain workflows.
-
-#### Resolved issues
-
-- Fixed the insecure zip file extraction to address `GHSA-x6ww-pf9m-m73m`.
-
-- Fixed the insecure use of `torch.load` and pickle to address `GHSA-6vm5-6jv9-rjpj` and `GHSA-p8cm-mm2v-gwjm`.
-
-- Fixed Torchvision for loading pretrained weights using the current syntax.
-
-- Fixed bug in MAISI `vae`.
-
-- Ensured that invalid images in the RetinaNet detector throw an exception.
-
-- Fixed the `HistogramNormalized` document.
-
-- Fixed a build failure by pinning `pyamg` to versions earlier than 5.3.0.
-
-- Fixed hardcoded input `dim` in `DiffusionModelEncoder`.
-
-- Fixed `gdown` download failure.
+- Support for Ubuntu 24.04 and Python 3.12.
 
 #### Known issues
 
