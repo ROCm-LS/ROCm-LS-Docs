@@ -19,7 +19,7 @@ Use the following matrix to view the ROCm-LS compatibility and system requiremen
    :align: left
    :class: compat-matrix format-big-table
 
-  +------------------------+--------------------------------------+-------------------+--------------+----------------+----------------+
+   +------------------------+--------------------------------------+-------------------+--------------+----------------+----------------+
    |  ROCm-LS version       |  Supported component                 | AMD Instinct™ GPU | ROCm version | Ubuntu version | Python version |
    +========================+======================================+===================+==============+================+================+
    | :version-start:`26.03` | `hipCIM 25.10.00                     | MI355X,           | 7.2.0,       | 24.04          | 3.12           |
@@ -29,7 +29,6 @@ Use the following matrix to view the ROCm-LS compatibility and system requiremen
    |                        | `MONAI 1.5.2 on ROCm                 | MI355X,           | 7.2.0,       | 24.04          | 3.12           |
    |                        | <https://rocm.docs.amd.com/projects/ | MI325X,           | 7.0.2        |                |                |
    |                        | monai/en/docs-26.03/>`_              | MI300X            |              |                |                |
-   |                        |                                      |                   |              |                |                |
    +------------------------+--------------------------------------+-------------------+--------------+----------------+----------------+
    | :version-start:`25.11` | `hipCIM 25.10.00                     | MI300A            | 7.0.2        | 24.04          | 3.12           |
    +                        + <https://rocm.docs.amd.com/projects  +-------------------+--------------+----------------+----------------+
