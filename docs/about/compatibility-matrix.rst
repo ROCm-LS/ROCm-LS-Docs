@@ -23,16 +23,19 @@ Use the following matrix to view the ROCm-LS compatibility and system requiremen
    |  ROCm-LS version       |  Supported component                 | AMD Instinct™ GPU | ROCm version | Ubuntu version | Python version |
    +========================+======================================+===================+==============+================+================+
    | :version-start:`26.03` | `hipCIM 25.10.00                     | MI355X,           | 7.2.0,       | 24.04          | 3.12           |
-   |                        | <https://rocm.docs.amd.com/projects  | MI325X,           | 7.0.2        |                |                |
-   |                        | /hipCIM/en/docs-26.03/>`_            | MI300X            |              |                |                |
+   |                        | <https://rocm.docs.amd.com/projects/ | MI325X,           | 7.0.2        |                |                |
+   |                        | hipcim-internal/en/                  | MI300X            |              |                |                |
+   |                        | swraw-doc-26.03/>`_                  |                   |              |                |                |
    +                        +--------------------------------------+-------------------+--------------+----------------+----------------+
    |                        | `MONAI 1.5.2 on ROCm                 | MI355X,           | 7.2.0,       | 24.04          | 3.12           |
    |                        | <https://rocm.docs.amd.com/projects/ | MI325X,           | 7.0.2        |                |                |
-   |                        | monai/en/docs-26.03/>`_              | MI300X            |              |                |                |
+   |                        | monai-internal/en/swraw-doc-26.03-   | MI300X            |              |                |                |
+   |                        | fixed/>`_                            |                   |              |                |                |
    +------------------------+--------------------------------------+-------------------+--------------+----------------+----------------+
    | :version-start:`25.11` | `hipCIM 25.10.00                     | MI300A            | 7.0.2        | 24.04          | 3.12           |
-   +                        + <https://rocm.docs.amd.com/projects  +-------------------+--------------+----------------+----------------+
-   |                        | /hipCIM/en/docs-25.11/>`_            | MI325X            | 6.4.3        | 22.04          | 3.10           |
+   +                        + <https://rocm.docs.amd.com/projects/ +-------------------+--------------+----------------+----------------+
+   |                        | hipcim-internal/en/                  | MI325X            | 6.4.3        | 22.04          | 3.10           |
+   |                        | swraw-doc-26.03/>`_                  |                   |              |                |                |
    +                        +--------------------------------------+-------------------+--------------+----------------+----------------+
    |                        | `MONAI 1.5.0 on ROCm (EA)            | MI300X            | 6.4.3        | 22.04          | 3.10           |
    |                        | <https://advanced-micro-devices-demo |                   |              |                |                |
