@@ -19,7 +19,7 @@ Use the following matrix to view the ROCm-LS compatibility and system requiremen
    :align: left
    :class: compat-matrix format-big-table
 
-   +------------------------+--------------------------------------+-------------------+--------------+----------------+----------------+
+  +------------------------+--------------------------------------+-------------------+--------------+----------------+----------------+
    |  ROCm-LS version       |  Supported component                 | AMD Instinct™ GPU | ROCm version | Ubuntu version | Python version |
    +========================+======================================+===================+==============+================+================+
    | :version-start:`26.03` | `hipCIM 25.10.00                     | MI355X,           | 7.2.0,       | 24.04          | 3.12           |
@@ -38,7 +38,7 @@ Use the following matrix to view the ROCm-LS compatibility and system requiremen
    |                        | `MONAI 1.5.0 on ROCm (EA)            | MI300X            | 6.4.3        | 22.04          | 3.10           |
    |                        | <https://advanced-micro-devices-demo |                   |              |                |                |
    |                        | --22.com.readthedocs.build/projects/ |                   |              |                |                |
-   |                        | monai/en/22/                         |                   |              |                |                |
+   |                        | monai/en/22/>`_                      |                   |              |                |                |
    +------------------------+--------------------------------------+-------------------+--------------+----------------+----------------+
    | :version-start:`25.09` | `hipCIM 25.04.00                     | MI325X            | 6.4.3        | 22.04          | 3.10           |
    |                        | <https://rocm.docs.amd.com/projects  |                   |              |                |                |
@@ -47,7 +47,7 @@ Use the following matrix to view the ROCm-LS compatibility and system requiremen
    |                        | `MONAI 1.5.0 on ROCm (EA)            | MI300X            | 6.4.3        | 22.04          | 3.10           |
    |                        | <https://advanced-micro-devices-demo |                   |              |                |                |
    |                        | --22.com.readthedocs.build/projects/ |                   |              |                |                |
-   |                        | monai/en/22/                         |                   |              |                |                |
+   |                        | monai/en/22/>`_                      |                   |              |                |                |
    +------------------------+--------------------------------------+-------------------+--------------+----------------+----------------+
    | :version-start:`25.06` | `hipCIM 25.04.00                     | MI325X            | 6.4.3        | 22.04          | 3.10           |
    |                        | <https://rocm.docs.amd.com/projects  |                   |              |                |                |
