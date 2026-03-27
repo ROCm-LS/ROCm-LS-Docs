@@ -26,8 +26,8 @@ The documentation is structured as follows:
 
   .. grid-item-card:: Components
 
-    * `hipCIM <https://rocm.docs.amd.com/projects/hipcim-internal/en/swraw-doc-26.03/>`_
-    * `MONAI on ROCm <https://rocm.docs.amd.com/projects/monai-internal/en/swraw-doc-26.03-fixed/>`_
+    * `hipCIM <https://rocm.docs.amd.com/projects/hipCIM/en/docs-26.03/>`_
+    * `MONAI on ROCm <https://rocm.docs.amd.com/projects/monai/en/docs-26.03/>`_
 
   .. grid-item-card:: Related content
 

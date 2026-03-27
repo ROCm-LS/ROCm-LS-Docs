@@ -12,9 +12,9 @@ subtrees:
 
 - caption: Components
   entries:
-  - url: https://rocm.docs.amd.com/projects/hipcim-internal/en/swraw-doc-26.03/
+  - url: https://rocm.docs.amd.com/projects/hipCIM/en/${branch}/
     title: hipCIM
-  - url: https://rocm.docs.amd.com/projects/monai-internal/en/swraw-doc-26.03-fixed/
+  - url: https://rocm.docs.amd.com/projects/monai/en/${branch}/
     title: MONAI on ROCm
 
 - caption: Related content
