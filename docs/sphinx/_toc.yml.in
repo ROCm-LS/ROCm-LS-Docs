@@ -7,14 +7,15 @@ subtrees:
 - entries:
   - file: about/release-notes.md
     title: Release notes
-  - file: about/compatibility-matrix.md
+  - file: about/compatibility-matrix
+    title: Compatibility matrix
 
 - caption: Components
   entries:
-  - url: https://rocm.docs.amd.com/projects/hipCIM/en/docs-25.11/
+  - url: https://rocm.docs.amd.com/projects/hipCIM/en/${branch}/
     title: hipCIM
-  - url: https://rocm.docs.amd.com/projects/monai/en/docs-25.09/
-    title: MONAI for AMD ROCm
+  - url: https://rocm.docs.amd.com/projects/monai/en/${branch}/
+    title: MONAI on ROCm
 
 - caption: Related content
   entries:
