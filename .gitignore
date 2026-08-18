@@ -5,3 +5,4 @@
 .vscode
 docs/about/release-notes.md
 docs/sphinx/_toc.yml
+docs/_build

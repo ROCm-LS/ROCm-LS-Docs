@@ -16,6 +16,10 @@ The ROCm-LS libraries provide tools to build a complete workflow for life scienc
 
 - **MONAI on ROCm:** An open-source framework that brings advanced deep learning capabilities for medical imaging to AMD GPU platforms.
 
+- **MONAI Model Zoo:** A collection of MONAI Bundle models with AMD ROCm inference overlays for validated segmentation workloads on AMD Instinct™ GPUs.
+
+- **MONAILabel:** An interactive medical image labeling framework with Early Access AMD GPU support on ROCm.
+
 MONAI on ROCm provides out-of-the-box integration with hipCIM, enabling accelerated image I/O and transformation operations for supported whole-slide images (WSI). Together, hipCIM and MONAI on ROCm enable researchers and healthcare professionals to streamline scientific imaging pipelines, enhance computational performance, and accelerate innovation across a wide range of life science use cases.
 
 
@@ -28,6 +32,8 @@ The documentation is structured as follows:
 
     * `hipCIM <https://rocm.docs.amd.com/projects/hipCIM/en/docs-26.03/>`_
     * `MONAI on ROCm <https://rocm.docs.amd.com/projects/monai/en/docs-26.03/>`_
+    * `MONAI Model Zoo <https://rocm.docs.amd.com/projects/model-zoo/en/docs-26.08/>`_
+    * `MONAILabel <https://rocm.docs.amd.com/projects/monailabel/en/docs-26.08/>`_
 
   .. grid-item-card:: Related content
 

@@ -1,18 +1,54 @@
-# ROCm-LS 26.03 release notes
+# ROCm-LS 26.08 release notes
 
 The release notes provide a summary of notable changes since the previous ROCm-LS release.
 
 ## Release highlights
 
-The following are notable new features and improvements in ROCm-LS 26.03 since the 25.11 release. For detailed changes to individual components, see [detailed component changelogs](#detailed-component-changelogs).
+The following are notable new features and improvements in ROCm-LS 26.08 since the 26.03 release. For detailed changes to individual components, see [detailed component changelogs](#detailed-component-changelogs).
 
-- **MONAI 1.5.2 on ROCm** exits Early Access (EA) state and is now production-ready for life sciences imaging workloads on AMD GPUs. It's based on the upstream project [MONAI 1.5.2](https://github.com/Project-MONAI/MONAI/releases/tag/1.5.2)
+### hipCIM (26.06.00)
 
-- **ROCm 7.2.0 support:** ROCm-LS 26.03 adds support for ROCm 7.2.0 while continuing support for ROCm 7.0.2.
+- **OME-TIFF and multi-page TIFF support:** Multi-IFD TIFFs are now accepted as a flat page list. Previously, any TIFF with more than one full-resolution IFD raised a parse error. This change delivers a 110× increase in OME corpus coverage — 90.3% of a 2,703-file OME-TIFF / Vectra-QPTIFF benchmark corpus now loads successfully, up from 0.8%.
+
+- **NIfTI-1 reader:** CuImage now opens `.nii` and `.nii.gz` volumetric files directly, without requiring nibabel or DCMTK. The reader handles endianness detection, gzip decompression (via libdeflate), and all common NIfTI-1 data types.
+
+- **DICOM Phase 1 reader:** Single-frame DICOM files (uncompressed Explicit/Implicit VR Little-Endian) are now readable via CuImage, with no DCMTK or GDCM dependency. Compressed transfer syntaxes (JPEG Baseline, JPEG 2000) are supported when the library is built with `CUMED_DICOM_COMPRESSED=ON`.
+
+- **rocJPEG handle pool (~7× single-read speedup):** rocJPEG decode handles are now pooled at the process level. Previously, a new handle was created and destroyed for every `read_region()` call, incurring ~8–9 ms of fixed overhead per tile. Pooling reduces single-tile 256 px `read_region(cuda)` from 3.76 ms to 0.515 ms (~7.3×), and 64-tile batch reads from 8.36 ms to 4.50 ms (~1.9×) on AMD Instinct™ MI350X, ROCm 10.0.0 (matches the hipCIM component release notes). In steady-state whole-slide throughput — the reproducible, quotable metric — hipCIM’s GPU path sustains ~9,500–9,800 patches/s, ~10× OpenSlide on MI355X/ROCm 10.0 (revalidated 2026-08-14, run `hipcim-reval-notorch-20260814T102044Z`).
+
+- **Process-level GPU tile cache (~3× repeated-read speedup):** Decoded tiles are cached in GPU memory across `read_region()` calls. Overlapping or repeated patch reads (common in multi-epoch training) skip re-decoding, delivering approximately 3× throughput on cached workloads.
+
+- **Graceful plugin degradation:** A plugin that fails to load (for example, when rocJPEG runtime libraries are absent) now logs a warning and is skipped, rather than taking down all formats. NIfTI and DICOM reads succeed even on hosts where slide-format GPU libraries are not installed.
+
+### MONAI on ROCm (1.6.0)
+
+- **SwinUNETR WindowAttention SDPA:** Scaled dot-product attention (SDPA) via `torch.nn.functional.scaled_dot_product_attention` is now auto-enabled for SwinUNETR WindowAttention layers on ROCm, replacing the explicit Q×KT×V loop. This accelerates SwinUNETR-based inference on AMD CDNA GPUs.
+
+- **SlidingWindowInferer dynamic graph stabilization:** The sliding window inferer patches an HIP-specific divergence in `torch.compile` graph recompilation caused by non-constant window shapes during inference. This eliminates recompilation storms on variable-resolution inputs.
+
+- **DynUNet GEMM-based ConvTranspose3d:** 3D transposed convolutions in DynUNet are routed through a GEMM-based implementation on ROCm, bypassing a performance regression in the default convolution transpose kernel on CDNA architectures.
+
+### MONAI Model Zoo
+
+- **AMD ROCm inference overlays (Early Access):** Five bundles are inference-validated and optimized for AMD Instinct™ GPUs using MONAI Bundle overlay configurations (`inference_rocm.json` / `inference_rocm.yaml`):
+
+  - `vista3d` — VISTA-3D multi-organ segmentation (130+ structures)
+  - `swin_unetr_btcv_segmentation` — Swin UNETR 13-organ abdominal CT segmentation
+  - `wholeBody_ct_segmentation` — SegResNet 104-structure whole-body CT segmentation
+  - `spleen_deepedit_annotation` — DeepEdit interactive spleen segmentation
+  - `pancreas_ct_dints_segmentation` — DiNTS pancreas and tumor segmentation
+
+  All overlays apply channels-last 3D memory format, BF16 AMP, `torch.compile`, and device-aware checkpoint loading without modifying model weights.
+
+### MONAILabel (0.8.5)
+
+- **AMD GPU support (Early Access):** MONAILabel now reports AMD GPU memory and device information on ROCm through three targeted code changes: ROCm-aware `gpu_memory_map()` in `monailabel/utils/others/generic.py`, the `/gpu` REST endpoint in `monailabel/endpoints/logs.py`, and an updated Dockerfile for ROCm runtime. The MONAILabel framework API and all existing apps and plugins are unmodified.
+
+- **Performance:** On BasicUNet-3D 3D patch inference (96³, fp32), AMD Instinct™ MI355X delivers 7.48 ms per patch — a 311× speedup over a fully-parallel 128-core CPU baseline (465× vs single-thread).
 
 ## ROCm-LS components
 
-The following table lists the versions of ROCm-LS components for ROCm-LS 26.03, including any version changes from 25.11 to 26.03. Click the GitHub icon to go to the component's source code.
+The following table lists the versions of ROCm-LS components for ROCm-LS 26.08, including any version changes from 26.03 to 26.08. Click the GitHub icon to go to the component's source code.
 
 <div class="pst-scrollable-table-container">
     <table id="rocm-rn-components" class="table">
@@ -31,60 +67,58 @@ The following table lists the versions of ROCm-LS components for ROCm-LS 26.03, 
         <tbody class="rocm-components-libs rocm-components-ml">
             <tr>
                 <td>Imaging</td>
-                <td><a href="https://rocm.docs.amd.com/projects/hipCIM/en/docs-26.03/">hipCIM</a></td>
-                <td>25.10.00</td>
+                <td><a href="https://rocm.docs.amd.com/projects/hipCIM/en/docs-26.08/">hipCIM</a></td>
+                <td>25.10.00&nbsp;&Rightarrow;&nbsp;<a href="#hipcim-26-06-00">26.06.00</a></td>
                 <td><a href="https://github.com/ROCm-LS/hipCIM"><i class="fab fa-github fa-lg"></i></a></td>
             </tr>
             <tr>
                 <td>AI/ML</td>
-                <td><a href="https://rocm.docs.amd.com/projects/monai/en/docs-26.03/">MONAI on ROCm</a></td>
-                <td>1.5.0&nbsp;&Rightarrow;&nbsp;<a href="#monai-on-rocm-1-5-2">1.5.2</a></td>
+                <td><a href="https://rocm.docs.amd.com/projects/monai/en/docs-26.08/">MONAI on ROCm</a></td>
+                <td>1.5.2&nbsp;&Rightarrow;&nbsp;<a href="#monai-on-rocm-1-6-0">1.6.0</a></td>
                 <td><a href="https://github.com/ROCm-LS/monai"><i class="fab fa-github fa-lg"></i></a></td>
+            </tr>
+            <tr>
+                <td>AI/ML</td>
+                <td><a href="https://rocm.docs.amd.com/projects/model-zoo/en/docs-26.08/">MONAI Model Zoo</a></td>
+                <td><a href="#monai-model-zoo">26.08</a></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>AI/ML</td>
+                <td><a href="https://rocm.docs.amd.com/projects/monailabel/en/docs-26.08/">MONAILabel</a></td>
+                <td><a href="#monailabel-0-8-5">0.8.5</a></td>
+                <td></td>
             </tr>
         </tbody>
     </table>
 </div>
 
-:::{note}
-The hipCIM version remains unchanged in this release.
-:::
-
 ## Detailed component changelogs
 
 The following sections describe key changes to the ROCm-LS components:
 
-### hipCIM (25.10.00)
+### hipCIM (26.06.00)
 
-#### Added
+#### Bug fixes
 
-- Support for ROCm 7.2.0 (support for ROCm 7.0.2 is maintained).
+- Fixed a SIGSEGV in the rocJPEG batch path triggered by scattered or out-of-range `read_region` calls.
 
-- Support for AMD Instinct™ GPUs MI355X and MI300X.
+- Fixed an OOM abort caused by an unchecked rocJPEG batch device allocation when VRAM was nearly full.
 
-#### Removed
+- Fixed a JP2K GPU abort where JPEG 2000-compressed tiles were incorrectly routed to the GPU decode path. JP2K tiles now decode into host memory before transfer.
 
-- Support for ROCm 6.4.3.
+- Fixed incorrect colour output on RGB-native images (blue/red channel swap) when using the host-input GPU decode path.
 
-- Support for Ubuntu 22.04 and Python 3.10.
+- Fixed an undefined-behavior crash where any rocJPEG or HIP error would call `exit(1)`, terminating the host process. Errors now throw `std::runtime_error` so callers can recover.
 
-- Support for AMD Instinct GPU MI300A.
-
-### MONAI on ROCm (1.5.2)
-
-This release is based on the upstream [MONAI 1.5.2](https://github.com/Project-MONAI/MONAI/releases/tag/1.5.2) release. Apart from the changes introduced in the [upstream MONAI 1.5.2](https://github.com/Project-MONAI/MONAI/compare/releasing/1.5.0...1.5.2), MONAI on ROCm 1.5.2 includes the following changes:
-
-#### Added
-
-- Support for ROCm 7.2.0.
-
-- Support for [PyTorch for AMD ROCm](https://pytorch.org/blog/pytorch-for-amd-rocm-platform-now-available-as-python-package/) 2.8 and later.
-
-- Support for AMD Instinct GPUs MI355X and MI325X.
-
-- Support for Ubuntu 24.04 and Python 3.12.
+### MONAI Model Zoo
 
 #### Known issues
 
-- Issues with GMM kernel on Multi-GPU.
+- `spleen_deepedit_annotation`: the ROCm overlay calls `network_def.enable_gemm_transpose(True)` when the method is present and sets `evaluator.compile = True`, so `torch.compile` is applied consistently. No source patch is required — the behaviour is configured entirely through the bundle overlay.
 
-- MIOpen runtime issue with 3D data on Multi‑GPU for 3D convolutions.
+### MONAILabel (0.8.5)
+
+#### Known issues
+
+- Pathology app workflows are not validated in this release.
