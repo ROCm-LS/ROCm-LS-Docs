@@ -15,7 +15,7 @@ version = "26.03"
 release = version
 html_title = "ROCm-LS 26.03 documentation"
 author = "Advanced Micro Devices, Inc."
-copyright = "Copyright (c) 2025 Advanced Micro Devices, Inc. All rights reserved."
+copyright = "Copyright (c) 2026 Advanced Micro Devices, Inc. All rights reserved."
 setting_all_article_info = True
 all_article_info_os = ["linux"]
 all_article_info_author = ""
@@ -33,7 +33,7 @@ there exists a non-null value mapped to docs_header_version, then the header in
 the documentation page will contain the given version string.
 '''
 html_context = {
-    "docs_header_version": "26.03"
+    "docs_header_version": "26.08"
 }
 
 html_static_path = ["sphinx/static/css"]

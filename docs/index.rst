@@ -22,14 +22,17 @@ The ROCm-LS libraries provide tools to build a complete workflow for life scienc
 
 MONAI on ROCm provides out-of-the-box integration with hipCIM, enabling accelerated image I/O and transformation operations for supported whole-slide images (WSI). Together, hipCIM and MONAI on ROCm enable researchers and healthcare professionals to streamline scientific imaging pipelines, enhance computational performance, and accelerate innovation across a wide range of life science use cases.
 
-
-The documentation is structured as follows:
-
 .. grid:: 2
   :gutter: 3
 
   .. grid-item-card:: Components
 
+    * `hipCIM <https://advanced-micro-devices-demo--137.com.readthedocs.build/projects/hipcim-internal/en/137/>`_
+    * `MONAI on ROCm <https://advanced-micro-devices-demo--115.com.readthedocs.build/projects/monai-internal/en/115/>`_
+    * `MONAI Model Zoo <https://advanced-micro-devices-demo--3.com.readthedocs.build/projects/model-zoo-internal/en/3/>`_
+    * MONAILabel
+
+  ..
     * `hipCIM <https://rocm.docs.amd.com/projects/hipCIM/en/docs-26.03/>`_
     * `MONAI on ROCm <https://rocm.docs.amd.com/projects/monai/en/docs-26.03/>`_
     * `MONAI Model Zoo <https://rocm.docs.amd.com/projects/model-zoo/en/docs-26.08/>`_
