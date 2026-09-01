@@ -8,7 +8,7 @@
 Contributing to ROCm-LS
 *************************
 
-To contribute to the ROCm-LS components, refer to the respective component's contribution guidelines:
+To contribute to ROCm-LS, follow the contribution guidelines for each component.
 
 - `Contributing to hipCIM <https://github.com/AMD-Ecosystem/hipCIM/blob/main/CONTRIBUTING.md>`_.
 

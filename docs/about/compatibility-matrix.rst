@@ -1,15 +1,14 @@
-
 .. meta::
   :description: ROCm-LS toolkit is a collection of open-source software for high-performance data science applications built on the core ROCm platform.
   :keywords: ROCm-LS, life sciences
 
 .. _rocm-ls-compat-matrix:
 
-=============================
+********************************
 ROCm-LS compatibility matrix
-=============================
+********************************
 
-Use the following matrix to view the ROCm-LS compatibility and system requirements across releases:
+The matrix lists ROCm-LS compatibility and system requirements across releases.
 
 .. role:: version-start
 
@@ -34,7 +33,7 @@ Use the following matrix to view the ROCm-LS compatibility and system requiremen
    |                        | <https://rocm.docs.amd.com/projects/ | MI325X,           |              |                |                |
    |                        | model-zoo/en/docs-26.08/>`_          | MI300X            |              |                |                |
    +                        +--------------------------------------+-------------------+--------------+----------------+----------------+
-   |                        | `MONAILabel 0.85                     | MI355X,           | 10.0         | 24.04          | 3.12           |
+   |                        | `MONAILabel 0.8.5                    | MI355X,           | 10.0         | 24.04          | 3.12           |
    |                        | <https://rocm.docs.amd.com/projects/ | MI325X,           |              |                |                |
    |                        | monailabel/en/docs-26.08/>`_         | MI300X            |              |                |                |
    +------------------------+--------------------------------------+-------------------+--------------+----------------+----------------+
