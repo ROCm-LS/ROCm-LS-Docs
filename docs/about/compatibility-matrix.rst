@@ -29,7 +29,7 @@ The matrix lists ROCm-LS compatibility and system requirements across releases.
    |                        | <https://rocm.docs.amd.com/projects/ | MI325X,           |              |                |                |
    |                        | monai/en/docs-26.08/>`_              | MI300X            |              |                |                |
    +                        +--------------------------------------+-------------------+--------------+----------------+----------------+
-   |                        | `MONAI Model Zoo 26.08 (EA)          | MI355X,           | 10.0.0       | 24.04          | 3.12           |
+   |                        | `MONAI Model Zoo 26.08 on ROCm (EA)  | MI355X,           | 10.0.0       | 24.04          | 3.12           |
    |                        | <https://rocm.docs.amd.com/projects/ | MI325X,           |              |                |                |
    |                        | model-zoo/en/docs-26.08/>`_          | MI300X            |              |                |                |
    +                        +--------------------------------------+-------------------+--------------+----------------+----------------+
