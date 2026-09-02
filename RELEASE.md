@@ -109,7 +109,7 @@ The following are changes specific to the ROCm-LS components.
 
 - Fixed an undefined-behavior crash where any rocJPEG or HIP error would call `exit(1)`, terminating the host process. Errors now throw `std::runtime_error` so callers can recover.
 
-### MONAI Model Zoo
+### MONAI Model Zoo (26.08)
 
 #### Known issues
 
