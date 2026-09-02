@@ -77,7 +77,7 @@ The following table lists the versions of ROCm-LS components for ROCm-LS 26.08, 
             </tr>
             <tr>
                 <td>AI/ML</td>
-                <td><a href="https://rocm.docs.amd.com/projects/model-zoo/en/docs-26.08/">MONAI Model Zoo</a></td>
+                <td><a href="https://rocm.docs.amd.com/projects/model-zoo/en/docs-26.08/">MONAI Model Zoo (26.08)</a></td>
                 <td><a href="#monai-model-zoo">26.08</a></td>
                 <td></td>
             </tr>
