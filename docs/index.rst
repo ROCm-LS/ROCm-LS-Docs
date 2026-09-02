@@ -6,7 +6,7 @@
 ROCm-LS documentation
 **************************
 
-The AMD ROCm™ Life Science toolkit (ROCm-LS) is an open-source, GPU-accelerated library suite for life science and healthcare applications that runs on the ROCm platform. 
+The AMD ROCm™ Life Science toolkit (ROCm-LS) is an open-source, GPU-accelerated library suite for life science and healthcare applications optimized for use on AMD GPUs. 
 
 ROCm-LS can be used to accelerate new and existing life science workloads on AMD devices. The suite targets compute-intensive applications that process larger datasets so that you can build pre-processing and post-processing applications for AI models and accelerate existing life science pipelines.
 
@@ -17,7 +17,7 @@ The ROCm-LS libraries provide the following tools for life science acceleration 
 - **MONAI Model Zoo**: A collection of MONAI Bundle models with AMD ROCm inference overlays for validated segmentation workloads on AMD Instinct™ GPUs.
 - **MONAILabel**: An interactive medical image labeling framework with Early Access AMD GPU support on ROCm.
 
-MONAI on ROCm integrates with hipCIM so that you can run scientific imaging pipelines on AMD GPUs. That integration accelerates image I/O and transformation operations for supported whole slide images
+These tools are integrated into a comprehensive workflow for scientific imaging pipelines that accelerates image I/O and transformation operations for supported whole slide images on AMD GPUs.
 
 .. grid:: 2
   :gutter: 3
