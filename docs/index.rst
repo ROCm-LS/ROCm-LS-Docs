@@ -27,7 +27,7 @@ These tools are integrated into a comprehensive workflow for scientific imaging 
     - `hipCIM <https://advanced-micro-devices-demo--137.com.readthedocs.build/projects/hipcim-internal/en/137/>`_
     - `MONAI on ROCm <https://advanced-micro-devices-demo--115.com.readthedocs.build/projects/monai-internal/en/115/>`_
     - `MONAI Model Zoo <https://advanced-micro-devices-demo--3.com.readthedocs.build/projects/model-zoo-internal/en/3/>`_
-    - MONAILabel
+    - `MONAILabel <https://advanced-micro-devices-demo--18.com.readthedocs.build/projects/MONAILabel-internal/en/18/>`_
 
   ..
     * `hipCIM <https://rocm.docs.amd.com/projects/hipCIM/en/docs-26.03/>`_
