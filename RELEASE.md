@@ -28,7 +28,7 @@ The following are notable new features and improvements in ROCm-LS 26.08 since t
 
 - **DynUNet GEMM-based ConvTranspose3d:** 3D transposed convolutions in DynUNet are routed through a GEMM-based implementation on ROCm, bypassing a performance regression in the default convolution transpose kernel on CDNA architectures.
 
-### MONAI Model Zoo
+### MONAI Model Zoo (26.08)
 
 - **AMD ROCm inference overlays (Early Access):** Five bundles are inference-validated and optimized for AMD Instinct™ GPUs using MONAI Bundle overlay configurations (`inference_rocm.json` or `inference_rocm.yaml`):
 
