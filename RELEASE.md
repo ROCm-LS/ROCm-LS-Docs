@@ -8,17 +8,17 @@ The following are notable new features and improvements in ROCm-LS 26.08 since t
 
 ### hipCIM (26.06.00)
 
-- **OME-TIFF and multi-page TIFF support:** Multi-IFD TIFFs are now accepted as a flat page list. Previously, any TIFF with more than one full-resolution IFD raised a parse error. This change delivers a 110× increase in OME corpus coverage — 90.3% of a 2,703-file OME-TIFF / Vectra-QPTIFF benchmark corpus now loads successfully, up from 0.8%.
+- **OME-TIFF and multi-page TIFF support:** Multi-IFD TIFFs are now accepted as a flat page list. Previously, any TIFF with more than one full-resolution IFD raised a parse error. 
 
-- **NIfTI-1 reader:** CuImage now opens `.nii` and `.nii.gz` volumetric files directly, without requiring nibabel or DCMTK. The reader handles endianness detection, gzip decompression (via libdeflate), and all common NIfTI-1 data types.
+- **NIfTI-1 reader:** CuImage now opens `.nii` and `.nii.gz` volumetric files directly, without requiring nibabel or DCMTK. The reader handles endianness detection, gzip decompression using libdeflate, and all common NIfTI-1 data types.
 
-- **DICOM Phase 1 reader:** Single-frame DICOM files (uncompressed Explicit/Implicit VR Little-Endian) are now readable via CuImage, with no DCMTK or GDCM dependency. Compressed transfer syntaxes (JPEG Baseline, JPEG 2000) are supported when the library is built with `CUMED_DICOM_COMPRESSED=ON`.
+- **DICOM Phase 1 reader:** Single-frame DICOM files, using uncompressed Explicit or Implicit VR Little-Endian, are now readable via CuImage, with no DCMTK or GDCM dependency. Compressed transfer syntaxes, including JPEG Baseline and JPEG 2000, are supported when the library is built with `CUMED_DICOM_COMPRESSED=ON`.
 
-- **rocJPEG handle pool (~7× single-read speedup):** rocJPEG decode handles are now pooled at the process level. Previously, a new handle was created and destroyed for every `read_region()` call, incurring ~8–9 ms of fixed overhead per tile. Pooling reduces single-tile 256 px `read_region(cuda)` from 3.76 ms to 0.515 ms (~7.3×), and 64-tile batch reads from 8.36 ms to 4.50 ms (~1.9×) on AMD Instinct™ MI350X, ROCm 10.0.0 (matches the hipCIM component release notes). In steady-state whole-slide throughput — the reproducible, quotable metric — hipCIM’s GPU path sustains ~9,500–9,800 patches/s, ~10× OpenSlide on MI355X/ROCm 10.0 (revalidated 2026-08-14, run `hipcim-reval-notorch-20260814T102044Z`).
+- **rocJPEG handle pool:** rocJPEG decode handles are now pooled at the process level. Previously, a new handle was created and destroyed for every `read_region()` call.
 
-- **Process-level GPU tile cache (~3× repeated-read speedup):** Decoded tiles are cached in GPU memory across `read_region()` calls. Overlapping or repeated patch reads (common in multi-epoch training) skip re-decoding, delivering approximately 3× throughput on cached workloads.
+- **Process-level GPU tile cache:** Decoded tiles are cached in GPU memory across `read_region()` calls.
 
-- **Graceful plugin degradation:** A plugin that fails to load (for example, when rocJPEG runtime libraries are absent) now logs a warning and is skipped, rather than taking down all formats. NIfTI and DICOM reads succeed even on hosts where slide-format GPU libraries are not installed.
+- **Graceful plugin degradation:** A plugin that fails to load, for example when rocJPEG runtime libraries are absent, now logs a warning and is skipped, rather than taking down all formats. NIfTI and DICOM reads succeed even on hosts where slide-format GPU libraries aren't installed.
 
 ### MONAI on ROCm (1.6.0)
 
@@ -30,21 +30,19 @@ The following are notable new features and improvements in ROCm-LS 26.08 since t
 
 ### MONAI Model Zoo
 
-- **AMD ROCm inference overlays (Early Access):** Five bundles are inference-validated and optimized for AMD Instinct™ GPUs using MONAI Bundle overlay configurations (`inference_rocm.json` / `inference_rocm.yaml`):
+- **AMD ROCm inference overlays (Early Access):** Five bundles are inference-validated and optimized for AMD Instinct™ GPUs using MONAI Bundle overlay configurations (`inference_rocm.json` or `inference_rocm.yaml`):
 
-  - `vista3d` — VISTA-3D multi-organ segmentation (130+ structures)
-  - `swin_unetr_btcv_segmentation` — Swin UNETR 13-organ abdominal CT segmentation
-  - `wholeBody_ct_segmentation` — SegResNet 104-structure whole-body CT segmentation
-  - `spleen_deepedit_annotation` — DeepEdit interactive spleen segmentation
-  - `pancreas_ct_dints_segmentation` — DiNTS pancreas and tumor segmentation
+  - `vista3d`: VISTA-3D multi-organ segmentation for 130+ structures
+  - `swin_unetr_btcv_segmentation`: Swin UNETR 13-organ abdominal CT segmentation
+  - `wholeBody_ct_segmentation`: SegResNet 104-structure whole-body CT segmentation
+  - `spleen_deepedit_annotation`: DeepEdit interactive spleen segmentation
+  - `pancreas_ct_dints_segmentation`: DiNTS pancreas and tumor segmentation
 
   All overlays apply channels-last 3D memory format, BF16 AMP, `torch.compile`, and device-aware checkpoint loading without modifying model weights.
 
 ### MONAILabel (0.8.5)
 
 - **AMD GPU support (Early Access):** MONAILabel now reports AMD GPU memory and device information on ROCm through three targeted code changes: ROCm-aware `gpu_memory_map()` in `monailabel/utils/others/generic.py`, the `/gpu` REST endpoint in `monailabel/endpoints/logs.py`, and an updated Dockerfile for ROCm runtime. The MONAILabel framework API and all existing apps and plugins are unmodified.
-
-- **Performance:** On BasicUNet-3D 3D patch inference (96³, fp32), AMD Instinct™ MI355X delivers 7.48 ms per patch — a 311× speedup over a fully-parallel 128-core CPU baseline (465× vs single-thread).
 
 ## ROCm-LS components
 
@@ -95,7 +93,7 @@ The following table lists the versions of ROCm-LS components for ROCm-LS 26.08, 
 
 ## Detailed component changelogs
 
-The following sections describe key changes to the ROCm-LS components:
+The following are changes specific to the ROCm-LS components.
 
 ### hipCIM (26.06.00)
 
