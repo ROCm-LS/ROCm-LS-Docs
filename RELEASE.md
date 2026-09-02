@@ -35,7 +35,7 @@ The following are notable new features and improvements in ROCm-LS 26.08 since t
   - `vista3d`: VISTA-3D multi-organ segmentation for 130+ structures.
   - `swin_unetr_btcv_segmentation`: Swin UNETR 13-organ abdominal CT segmentation.
   - `wholeBody_ct_segmentation`: SegResNet 104-structure whole-body CT segmentation
-  - `spleen_deepedit_annotation`: DeepEdit interactive spleen segmentation
+  - `spleen_deepedit_annotation`: DeepEdit interactive spleen segmentation.
   - `pancreas_ct_dints_segmentation`: DiNTS pancreas and tumor segmentation.
 
   All overlays apply channels-last 3D memory format, BF16 AMP, `torch.compile`, and device-aware checkpoint loading without modifying model weights.
