@@ -12,7 +12,7 @@ To contribute to ROCm-LS, follow the contribution guidelines for each component.
 
 - `Contributing to hipCIM <https://github.com/AMD-Ecosystem/hipCIM/blob/main/CONTRIBUTING.md>`
 
-- `Contributing to MONAI <https://github.com/AMD-Ecosystem/MONAI/blob/main/CONTRIBUTING.md>`_.
+- `Contributing to MONAI <https://github.com/AMD-Ecosystem/MONAI/blob/main/CONTRIBUTING.md>`
 
 - `Contributing to MONAILabel <https://github.com/AMD-Ecosystem/MONAILabel/blob/main/CONTRIBUTING.md>`
 
