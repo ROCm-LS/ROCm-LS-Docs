@@ -6,18 +6,18 @@
 ROCm-LS documentation
 **************************
 
-The AMD ROCm™ Life Science toolkit (ROCm-LS) is a GPU-accelerated library suite for life science and healthcare applications. It's an open-source software collection for life science applications. The collection runs on the ROCm platform. ROCm-LS runs life science processing and analysis workloads on AMD accelerators and GPUs.
+The AMD ROCm™ Life Science toolkit (ROCm-LS) is an open-source, GPU-accelerated library suite for life science and healthcare applications that runs on the ROCm platform. 
 
-You can use ROCm-LS to accelerate new and existing life science workloads on AMD devices. The suite targets compute-intensive applications that process larger datasets. You can build pre-processing and post-processing applications for AI models. You can also accelerate existing life science pipelines.
+ROCm-LS can be used to accelerate new and existing life science workloads on AMD devices. The suite targets compute-intensive applications that process larger datasets so that you can build pre-processing and post-processing applications for AI models and accelerate existing life science pipelines.
 
-The ROCm-LS libraries provide tools for life science acceleration on AMD GPUs.
+The ROCm-LS libraries provide the following tools for life science acceleration on AMD GPUs:
 
 - **hipCIM**: A GPU imaging library that accelerates and scales image processing on AMD Instinct™ GPUs.
 - **MONAI on ROCm**: An open-source framework that brings deep learning for medical imaging to AMD GPU platforms.
 - **MONAI Model Zoo**: A collection of MONAI Bundle models with AMD ROCm inference overlays for validated segmentation workloads on AMD Instinct™ GPUs.
 - **MONAILabel**: An interactive medical image labeling framework with Early Access AMD GPU support on ROCm.
 
-MONAI on ROCm integrates with hipCIM. That integration accelerates image I/O and transformation operations for supported whole-slide images. hipCIM and MONAI on ROCm together let you run scientific imaging pipelines on AMD GPUs.
+MONAI on ROCm integrates with hipCIM so that you can run scientific imaging pipelines on AMD GPUs. That integration accelerates image I/O and transformation operations for supported whole slide images
 
 .. grid:: 2
   :gutter: 3
