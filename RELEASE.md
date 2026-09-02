@@ -32,7 +32,7 @@ The following are notable new features and improvements in ROCm-LS 26.08 since t
 
 - **AMD ROCm inference overlays (Early Access):** Five bundles are inference-validated and optimized for AMD Instinct™ GPUs using MONAI Bundle overlay configurations (`inference_rocm.json` or `inference_rocm.yaml`):
 
-  - `vista3d`: VISTA-3D multi-organ segmentation for 130+ structures
+  - `vista3d`: VISTA-3D multi-organ segmentation for 130+ structures.
   - `swin_unetr_btcv_segmentation`: Swin UNETR 13-organ abdominal CT segmentation
   - `wholeBody_ct_segmentation`: SegResNet 104-structure whole-body CT segmentation
   - `spleen_deepedit_annotation`: DeepEdit interactive spleen segmentation
