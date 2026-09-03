@@ -24,7 +24,7 @@ subtrees:
 - caption: Related content
   entries:
   - url: https://instinct.docs.amd.com/latest/life-science/ROCmLS-Blogs.html
-    title: ROCm-LS blogs
+    title: AMD Life Science blogs
   - file: contribute/contribution
 
 - caption: About

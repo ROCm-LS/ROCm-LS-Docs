@@ -13,7 +13,7 @@ project = "ROCm for Life Science"
 
 version = "26.08"
 release = version
-html_title = "ROCm-LS 26.08 documentation"
+html_title = "AMD Life Science 26.08 documentation"
 author = "Advanced Micro Devices, Inc."
 copyright = "Copyright (c) 2026 Advanced Micro Devices, Inc. All rights reserved."
 setting_all_article_info = True
@@ -45,4 +45,3 @@ extensions = ["rocm_docs"]
 external_toc_path = "./sphinx/_toc.yml"
 
 exclude_patterns = ['.venv']
-external_project_remote_repository = ""  # Intentionally left empty to disable remote repository mapping

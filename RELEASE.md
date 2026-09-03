@@ -1,10 +1,10 @@
-# ROCm-LS 26.08 release notes
+# AMD Life Science 26.08 release notes
 
-The release notes provide a summary of notable changes since the previous ROCm-LS release.
+The release notes provide a summary of notable changes since the previous AMD Life Science release.
 
 ## Release highlights
 
-The following are notable new features and improvements in ROCm-LS 26.08 since the 26.03 release. For detailed changes to individual components, see [detailed component changelogs](#detailed-component-changelogs).
+The following are notable new features and improvements in AMD Life Science 26.08 since the 26.03 release. For detailed changes to individual components, see [detailed component changelogs](#detailed-component-changelogs).
 
 ### hipCIM (26.06.00)
 
@@ -44,9 +44,9 @@ The following are notable new features and improvements in ROCm-LS 26.08 since t
 
 - **AMD GPU support (Early Access):** MONAILabel now reports AMD GPU memory and device information on ROCm through three targeted code changes: ROCm-aware `gpu_memory_map()` in `monailabel/utils/others/generic.py`, the `/gpu` REST endpoint in `monailabel/endpoints/logs.py`, and an updated Dockerfile for ROCm runtime. The MONAILabel framework API and all existing apps and plugins are unmodified.
 
-## ROCm-LS components
+## AMD Life Science components
 
-The following table lists the versions of ROCm-LS components for ROCm-LS 26.08, including any version changes from 26.03 to 26.08. Click the GitHub icon to go to the component's source code.
+The following table lists the versions of AMD Life Science components for AMD Life Science 26.08, including any version changes from 26.03 to 26.08. Click the GitHub icon to go to the component's source code.
 
 <div class="pst-scrollable-table-container">
     <table id="rocm-rn-components" class="table">
@@ -67,24 +67,26 @@ The following table lists the versions of ROCm-LS components for ROCm-LS 26.08, 
                 <td>Imaging</td>
                 <td><a href="https://rocm.docs.amd.com/projects/hipCIM/en/docs-26.08/">hipCIM</a></td>
                 <td>25.10.00&nbsp;&Rightarrow;&nbsp;<a href="#hipcim-26-06-00">26.06.00</a></td>
-                <td><a href="https://github.com/ROCm-LS/hipCIM"><i class="fab fa-github fa-lg"></i></a></td>
+                <td><a href="https://github.com/AMD-Ecosystem/hipCIM"><i class="fab fa-github fa-lg"></i></a></td>
             </tr>
             <tr>
                 <td>AI/ML</td>
                 <td><a href="https://rocm.docs.amd.com/projects/monai/en/docs-26.08/">MONAI on ROCm</a></td>
                 <td>1.5.2&nbsp;&Rightarrow;&nbsp;<a href="#monai-on-rocm-1-6-0">1.6.0</a></td>
-                <td><a href="https://github.com/ROCm-LS/monai"><i class="fab fa-github fa-lg"></i></a></td>
+                <td><a href="https://github.com/AMD-Ecosystem/monai"><i class="fab fa-github fa-lg"></i></a></td>
             </tr>
             <tr>
                 <td>AI/ML</td>
                 <td><a href="https://rocm.docs.amd.com/projects/model-zoo/en/docs-26.08/">MONAI Model Zoo</a></td>
-                <td><a href="#monai-model-zoo">26.08</a></td>
+                <td><a href="#monai-model-zoo-26-08">26.08</a></td>
+                <td><a href="https://github.com/AMD-Ecosystem/model-zoo"><i class="fab fa-github fa-lg"></i></a></td>
                 <td></td>
             </tr>
             <tr>
                 <td>AI/ML</td>
                 <td><a href="https://rocm.docs.amd.com/projects/monailabel/en/docs-26.08/">MONAILabel</a></td>
                 <td><a href="#monailabel-0-8-5">0.8.5</a></td>
+                <td><a href="https://github.com/AMD-Ecosystem/monailabel"><i class="fab fa-github fa-lg"></i></a></td>
                 <td></td>
             </tr>
         </tbody>
@@ -93,11 +95,11 @@ The following table lists the versions of ROCm-LS components for ROCm-LS 26.08, 
 
 ## Detailed component changelogs
 
-The following are changes specific to the ROCm-LS components.
+The following are changes specific to the AMD Life Science components.
 
 ### hipCIM (26.06.00)
 
-#### Bug fixes
+#### Resolved issues
 
 - Fixed a SIGSEGV in the rocJPEG batch path triggered by scattered or out-of-range `read_region` calls.
 
