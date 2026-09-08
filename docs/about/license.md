@@ -1,4 +1,4 @@
-# ROCm-LS license
+# AMD Life Science license
 
 ```{include} ../../LICENSE
 ```
