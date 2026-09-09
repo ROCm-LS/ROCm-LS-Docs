@@ -18,7 +18,7 @@ subtrees:
     title: MONAI on ROCm
   - url: https://rocm.docs.amd.com/projects/model-zoo-internal/en/amd-integration/
     title: MONAI Model Zoo
-  - url: ttps://rocm.docs.amd.com/projects/MONAILabel-internal/en/amd-integration-0.8.5/
+  - url: https://rocm.docs.amd.com/projects/MONAILabel-internal/en/amd-integration-0.8.5/
     title: MONAILabel
 
 - caption: Related content
