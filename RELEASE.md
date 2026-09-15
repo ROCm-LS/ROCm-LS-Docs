@@ -77,9 +77,9 @@ The following table lists the versions of AMD Life Science components for AMD Li
             </tr>
             <tr>
                 <td>AI/ML</td>
-                <td><a href="https://rocm.docs.amd.com/projects/model-zoo/en/docs-26.08/">MONAI Model Zoo</a></td>
+                <td><a href="https://rocm.docs.amd.com/projects/monai-model-zoo/en/docs-26.08/">MONAI Model Zoo</a></td>
                 <td><a href="#monai-model-zoo-26-08">26.08</a></td>
-                <td><a href="https://github.com/AMD-Ecosystem/model-zoo"><i class="fab fa-github fa-lg"></i></a></td>
+                <td><a href="https://github.com/AMD-Ecosystem/monai-model-zoo"><i class="fab fa-github fa-lg"></i></a></td>
                 <td></td>
             </tr>
             <tr>

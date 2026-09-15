@@ -31,7 +31,7 @@ The matrix lists AMD Life Science compatibility and system requirements across r
    +                            +--------------------------------------+-------------------+--------------+----------------+----------------+
    |                            | `MONAI Model Zoo 26.08 on ROCm (EA)  | MI355X,           | 10.0.0       | 24.04          | 3.12           |
    |                            | <https://rocm.docs.amd.com/projects/ | MI325X,           |              |                |                |
-   |                            | model-zoo/en/docs-26.08/>`_          | MI300X            |              |                |                |
+   |                            | monai-model-zoo/en/docs-26.08/>`_    | MI300X            |              |                |                |
    +                            +--------------------------------------+-------------------+--------------+----------------+----------------+
    |                            | `MONAILabel 0.8.5 (EA)               | MI355X,           | 10.0.0       | 24.04          | 3.12           |
    |                            | <https://rocm.docs.amd.com/projects/ | MI325X,           |              |                |                |

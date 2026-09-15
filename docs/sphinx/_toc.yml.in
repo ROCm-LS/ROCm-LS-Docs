@@ -16,15 +16,13 @@ subtrees:
     title: hipCIM
   - url: https://rocm.docs.amd.com/projects/monai-internal/en/amd-integration/
     title: MONAI on ROCm
-  - url: https://rocm.docs.amd.com/projects/model-zoo-internal/en/amd-integration/
+  - url: https://rocm.docs.amd.com/projects/monai-model-zoo-internal/en/amd-integration/
     title: MONAI Model Zoo
   - url: https://rocm.docs.amd.com/projects/MONAILabel-internal/en/amd-integration-0.8.5/
     title: MONAILabel
 
 - caption: Related content
   entries:
-  - url: https://instinct.docs.amd.com/latest/life-science/ROCmLS-Blogs.html
-    title: AMD Life Science blogs
   - file: contribute/contribution
 
 - caption: About
