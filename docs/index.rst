@@ -31,7 +31,7 @@ The documentation is structured as follows:
 
   .. grid-item-card:: Related content
 
-    * `ROCm-LS blogs <https://instinct.docs.amd.com/latest/life-science/ROCmLS-Blogs.html>`_
+    * `ROCm-LS blogs <https://rocm.blogs.amd.com/software-tools-optimization/rocm-ls-intro/README.html>`_
     * :ref:`rocm-ls-contribution`
 
 For ready-to-run code samples that demonstrate the ROCm-LS capabilities on the AMD ROCm platform, see the `ROCm-LS examples <https://github.com/ROCm-LS/examples>`_.
