@@ -24,10 +24,10 @@ These tools are integrated into a comprehensive workflow for scientific imaging 
 
   .. grid-item-card:: Components
 
-    - `hipCIM <https://rocm.docs.amd.com/projects/hipcim-internal/en/amd-integration-26.06.00/>`_
-    - `MONAI on ROCm <https://rocm.docs.amd.com/projects/monai-internal/en/amd-integration/>`_
-    - `MONAI Model Zoo on ROCm <https://rocm.docs.amd.com/projects/model-zoo-internal/en/amd-integration/>`_
-    - `MONAILabel <https://rocm.docs.amd.com/projects/MONAILabel-internal/en/amd-integration-0.8.5/>`_
+    - `hipCIM <https://rocm.docs.amd.com/projects/hipCIM/en/docs-26.08/>`_
+    - `MONAI on ROCm <https://rocm.docs.amd.com/projects/monai/en/docs-26.08/>`_
+    - `MONAI Model Zoo on ROCm <https://rocm.docs.amd.com/projects/monai-model-zoo/en/docs-26.08/>`_
+    - `MONAILabel <https://rocm.docs.amd.com/projects/monailabel/en/docs-26.08/>`_
 
   .. grid-item-card:: Related content
 
