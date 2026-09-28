@@ -10,10 +10,10 @@ Contributing to AMD Life Science
 
 To contribute to AMD Life Science, follow the contribution guidelines for each component.
 
-- `Contributing to hipCIM <https://github.com/AMD-Ecosystem/hipCIM/blob/main/CONTRIBUTING.md>`_
+- `Contributing to hipCIM <https://github.com/AMD-Ecosystem/hipCIM/blob/amd-develop/CONTRIBUTING.md>`_
 
-- `Contributing to MONAI <https://github.com/AMD-Ecosystem/MONAI/blob/main/CONTRIBUTING.md>`_
+- `Contributing to MONAI <https://github.com/AMD-Ecosystem/MONAI/blob/amd-develop/CONTRIBUTING.md>`_
 
-- `Contributing to MONAILabel <https://github.com/AMD-Ecosystem/MONAILabel/blob/main/CONTRIBUTING.md>`_
+- `Contributing to MONAILabel <https://github.com/AMD-Ecosystem/MONAILabel/blob/amd-develop/CONTRIBUTING.md>`_
 
-- `Contributing to MONAI Model Zoo <https://github.com/AMD-Ecosystem/monai-model-zoo/blob/main/CONTRIBUTING.md>`_
+- `Contributing to MONAI Model Zoo <https://github.com/AMD-Ecosystem/monai-model-zoo/blob/amd-develop/CONTRIBUTING.md>`_
