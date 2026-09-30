@@ -33,7 +33,7 @@ The following table lists the ROCm-LS components available in the current releas
             <tr>
                 <td><a href="https://rocm.docs.amd.com/projects/hipCIM/en/docs-25.06/">hipCIM</a></td>
                 <td>25.04.00</td>
-                <td><a href="https://github.com/ROCm-LS/hipCIM"><i class="fab fa-github fa-lg"></i></a></td>
+                <td><a href="https://github.com/AMD-Ecosystem/hipCIM"><i class="fab fa-github fa-lg"></i></a></td>
             </tr>
         </tbody>
     </table>
