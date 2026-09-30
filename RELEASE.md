@@ -41,13 +41,13 @@ The following table lists the versions of ROCm-LS components for ROCm-LS 25.11, 
                 <td>Imaging</td>
                 <td><a href="https://rocm.docs.amd.com/projects/hipCIM/en/docs-25.11/">hipCIM</a></td>
                 <td>25.04.00&nbsp;&Rightarrow;&nbsp;<a href="#hipcim-25-10-00">25.10.00</a></td>
-                <td><a href="https://github.com/ROCm-LS/hipCIM"><i class="fab fa-github fa-lg"></i></a></td>
+                <td><a href="https://github.com/AMD-Ecosystem/hipCIM"><i class="fab fa-github fa-lg"></i></a></td>
             </tr>
             <tr>
                 <td>AI/ML</td>
                 <td><a href="https://rocm.docs.amd.com/projects/monai/en/docs-25.11/">MONAI for AMD ROCm</a></td>
                 <td>1.0.0</td>
-                <td><a href="https://github.com/ROCm-LS/monai"><i class="fab fa-github fa-lg"></i></a></td>
+                <td><a href="https://github.com/AMD-Ecosystem/monai"><i class="fab fa-github fa-lg"></i></a></td>
             </tr>
         </tbody>
     </table>
