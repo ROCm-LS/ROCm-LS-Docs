@@ -12,15 +12,17 @@ subtrees:
 
 - caption: Components
   entries:
-  - url: https://rocm.docs.amd.com/projects/hipCIM/en/${branch}/
+  - url: https://rocm.docs.amd.com/projects/hipCIM/en/docs-26.08/
     title: hipCIM
-  - url: https://rocm.docs.amd.com/projects/monai/en/${branch}/
+  - url: https://rocm.docs.amd.com/projects/monai/en/docs-26.08/
     title: MONAI on ROCm
+  - url: https://rocm.docs.amd.com/projects/monai-model-zoo/en/docs-26.08/
+    title: MONAI Model Zoo
+  - url: https://rocm.docs.amd.com/projects/monailabel/en/docs-26.08/
+    title: MONAILabel
 
 - caption: Related content
   entries:
-  - url: https://rocm.blogs.amd.com/software-tools-optimization/rocm-ls-intro/README.html
-    title: ROCm-LS blogs
   - file: contribute/contribution
 
 - caption: About
