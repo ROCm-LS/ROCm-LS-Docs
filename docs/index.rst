@@ -33,4 +33,4 @@ These tools are integrated into a comprehensive workflow for scientific imaging 
 
     - :doc:`contribute/contribution`
 
-For ready-to-run code samples that demonstrate AMD Life Science capabilities on the AMD ROCm platform, see the `AMD Life Science examples <https://github.com/AMD-Ecosystem/lifescience/examples>`_.
+For ready-to-run code samples that demonstrate AMD Life Science capabilities on the AMD ROCm platform, see the `AMD Life Science examples <https://github.com/AMD-Ecosystem/lifescience-examples>`_.
