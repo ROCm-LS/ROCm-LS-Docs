@@ -1,37 +1,36 @@
 .. meta::
-  :description: ROCm-LS toolkit is a collection of open-source software for high-performance life science applications built on the core ROCm platform.
-  :keywords: ROCm-LS, life sciences
+  :description: AMD Life Science toolkit is a collection of open-source software for high-performance data science applications built on the core ROCm platform.
+  :keywords: AMD Life Science, life sciences
 
-*******************************
-ROCm Life Science documentation
-*******************************
+*********************************
+AMD Life Science documentation
+*********************************
 
-The AMD ROCm™ Life Science (ROCm-LS) toolkit is a GPU-accelerated library suite developed for life science and healthcare applications, offering a robust set of tools optimized for AMD hardware. It is an open-source software collection for high-performance life science applications built on the core ROCm platform, which helps you to accelerate life science processing and analyze workloads on AMD accelerators and GPUs.
+The AMD Life Science toolkit is an open-source, GPU-accelerated library suite for life science and healthcare applications built on the core ROCm™ platform and optimized for use on AMD GPUs. 
 
-You can leverage ROCm-LS to accelerate both new and existing life science workloads, utilizing the speed of AMD devices to execute intensive applications with larger datasets. ROCm-LS creates scalable solutions to address the needs of today's data-driven landscape. With ROCm-LS, you can build pre- and post-processing applications for your AI models and accelerate your existing life science pipelines with minimal effort.
+AMD Life Science can be used to accelerate new and existing life science workloads on AMD devices. The suite targets compute-intensive applications that process larger datasets so that you can build pre-processing and post-processing applications for AI models and accelerate existing life science pipelines.
 
-The ROCm-LS libraries provide tools to build a complete workflow for life science acceleration on AMD GPUs:
+The AMD Life Science libraries provide the following tools for life science acceleration on AMD GPUs:
 
-- **hipCIM:** A high-performance GPU imaging library that accelerates and scales image processing workflows on AMD Instinct™ GPUs.
+- **hipCIM**: A GPU imaging library that accelerates and scales image processing on AMD Instinct™ GPUs.
+- **MONAI on ROCm**: An open-source framework that brings deep learning for medical imaging to AMD GPU platforms.
+- **MONAI Model Zoo**: A collection of MONAI Bundle models with AMD ROCm inference overlays for validated segmentation workloads on AMD Instinct™ GPUs.
+- **MONAILabel**: An interactive medical image labeling framework with Early Access AMD GPU support on ROCm.
 
-- **MONAI on ROCm:** An open-source framework that brings advanced deep learning capabilities for medical imaging to AMD GPU platforms.
-
-MONAI on ROCm provides out-of-the-box integration with hipCIM, enabling accelerated image I/O and transformation operations for supported whole-slide images (WSI). Together, hipCIM and MONAI on ROCm enable researchers and healthcare professionals to streamline scientific imaging pipelines, enhance computational performance, and accelerate innovation across a wide range of life science use cases.
-
-
-The documentation is structured as follows:
+These tools are integrated into a comprehensive workflow for scientific imaging pipelines that accelerates image I/O and transformation operations for supported whole slide images on AMD GPUs.
 
 .. grid:: 2
   :gutter: 3
 
   .. grid-item-card:: Components
 
-    * `hipCIM <https://rocm.docs.amd.com/projects/hipCIM/en/docs-26.03/>`_
-    * `MONAI on ROCm <https://rocm.docs.amd.com/projects/monai/en/docs-26.03/>`_
+    - `hipCIM <https://rocm.docs.amd.com/projects/hipCIM/en/docs-26.08/>`_
+    - `MONAI on ROCm <https://rocm.docs.amd.com/projects/monai/en/docs-26.08/>`_
+    - `MONAI Model Zoo on ROCm <https://rocm.docs.amd.com/projects/monai-model-zoo/en/docs-26.08/>`_
+    - `MONAILabel <https://rocm.docs.amd.com/projects/monailabel/en/docs-26.08/>`_
 
   .. grid-item-card:: Related content
 
-    * `ROCm-LS blogs <https://rocm.blogs.amd.com/software-tools-optimization/rocm-ls-intro/README.html>`_
-    * :ref:`rocm-ls-contribution`
+    - :doc:`contribute/contribution`
 
-For ready-to-run code samples that demonstrate the ROCm-LS capabilities on the AMD ROCm platform, see the `ROCm-LS examples <https://github.com/ROCm-LS/examples>`_.
+For ready-to-run code samples that demonstrate AMD Life Science capabilities on the AMD ROCm platform, see the `AMD Life Science examples <https://github.com/AMD-Ecosystem/lifescience/examples>`_.
